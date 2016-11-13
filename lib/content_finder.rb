@@ -88,10 +88,12 @@ module ContentFinder
 
   class SelectionResult
     attr_reader :images
+    attr_reader :hrefs
     def initialize
       @nodes = []
       @is_tree = []    
-      @images = []   
+      @images = []
+      @hrefs = []   
     end
 
     def push_tree(node)
@@ -102,6 +104,11 @@ module ContentFinder
         subtree.push(child_node)
         if child_node.name.downcase == 'img'
           subtree.images.push(node.to_html)
+        elsif child_node.name.downcase == 'a'
+          href = child_node.attribute('href')
+          if href.present?
+            subtree.hrefs.push(href)
+          end 
         end
       end
       @nodes.push(subtree)      
@@ -118,6 +125,17 @@ module ContentFinder
       else
         push_tree(node)                
       end
+    end
+
+    def all_hrefs
+      result = hrefs.dup
+      @nodes.each_with_index do |node, idx|
+        if @is_tree.fetch(idx)
+          result += node.all_hrefs
+
+        end
+      end
+      result
     end
     
     def to_str
@@ -148,7 +166,7 @@ module ContentFinder
     attr_reader :recursion_threshold_getter
     attr_reader :input    
     attr_reader :selected_html
-    attr_reader :selected_text
+    attr_reader :selected_result
     def initialize(input, options = {})
       @input = input
       @recursion_spread_percent = options.fetch(:recursion_spread_percent)/100.0

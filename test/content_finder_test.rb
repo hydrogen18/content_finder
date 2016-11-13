@@ -14,9 +14,21 @@ class ContentFinderTest < MiniTest::Test
         finder.find!
         
         File.open('/home/ericu/tmp.html','w') do |fout|
+          fout.write('<div>')
+          fout.write('<ul>')
+          finder.selected_result.all_hrefs.each do |href|
+            fout.write('<li>')
+            fout.write('<a href="')
+            fout.write(href)
+            fout.write('">')
+            fout.write(href)
+            fout.write('</a>')
+            fout.write('</li>')
+          end
+          fout.write('</ul>')
+          fout.write('</div>')
           fout.write(finder.selected_html)
-        end        
-        
+        end                
       end
     end
   end
