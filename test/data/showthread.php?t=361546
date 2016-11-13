@@ -1,0 +1,2319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+	
+<!-- Amazon Tag Top -->
+<script type='text/javascript' src='//c.amazon-adsystem.com/aax2/amzn_ads.js'></script>
+<script type='text/javascript'>
+    try {
+            amznads.getAds('3274');
+        } catch (e) { /*ignore*/ }
+</script>
+<script type='text/javascript'>
+  var amazonRubiconKeys = amznads.getTokens();
+</script>
+<!-- /Amazon Tag Top -->
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+<meta name="keywords" content=" Mounting speedometer on a naked 2nd gen., Suzuki sv650, suzuki sv650 forum, suzuki gladius, gladius forum, sv1000 forum, suzuki sv1000, sv1000 forum, sv650s, sv650sx, sv1000, sv1000s, sv650 reviews, gladius forums" />
+<meta name="description" content=" Mounting speedometer on a naked 2nd gen. SV650 Gen2 (03-15) Tech" />
+
+
+<!-- CSS Stylesheet -->
+<style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.7 CSS
+* Style: 'Dark vB Fluid (Free)'; Style ID: 2
+*/
+@import url("clientscript/vbulletin_css/style-307c004b-00002.css");
+</style>
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_important.css?v=387" />
+
+
+<!-- / CSS Stylesheet -->
+
+<script type="text/javascript" src="clientscript/yui/yahoo-dom-event/yahoo-dom-event.js?v=387"></script>
+<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=387"></script>
+<script type="text/javascript">
+<!--
+var SESSIONURL = "s=463847793b23c1daa8e6a89bfa37296c&";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "/forum/images/dark_vb/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+<script type="text/javascript" src="clientscript/vbulletin_global.js?v=387"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="Suzuki SV650 Forum: SV650, SV1000, Gladius Forums RSS Feed" href="external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="Suzuki SV650 Forum: SV650, SV1000, Gladius Forums - SV650 Gen2 (03-15) Tech - RSS Feed" href="external.php?type=RSS2&amp;forumids=17" />
+	
+
+
+
+
+<!-- REGISTRATION CODE STARTS -->
+
+<!-- REGISTRATION CODE ENDS -->
+<script type="text/javascript" src="clientscript/ame.js" ></script><!-- 
+  nCode Image Resizer
+  (c) nCode
+  http://www.ncode.nl/vbulletinplugins/
+-->
+<script type="text/javascript" src="http://static.verticalscope.com/clientscript/ncode_imageresizer.js?v=1.0.1"></script>
+<style type="text/css">
+<!--
+table.ncode_imageresizer_warning {
+	background: #FFFFE1;
+	color: #000000;
+	border: 1px solid #CCC;
+	cursor: pointer;
+}
+
+table.ncode_imageresizer_warning td {
+	font-size: 10px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+table.ncode_imageresizer_warning td.td1 {
+	padding: 5px;
+}
+
+table.ncode_imageresizer_warning td.td1 {
+	padding: 2px;
+}
+table.ncode_imageresizer_warning2 {
+	color: #ffffff;
+	cursor: pointer;
+	border-collapse: collapse;
+}
+
+table.ncode_imageresizer_warning2 .td1 {
+	background: #000000;
+	white-space:nowrap;
+	padding: 5px;
+}
+
+table.ncode_imageresizer_warning2 a:link {
+	color: #ffffff;
+}
+
+table.ncode_imageresizer_warning2 td {
+	font-size: 10px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+table.ncode_imageresizer_warning2 td.td2 {
+	padding: 0px;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+NcodeImageResizer.MODE = 'enlarge';
+<!-- NcodeImageResizer.MAXWIDTH = 640; -->
+if (screen && screen.width && parseInt(screen.width) < parseInt(640)) {
+    NcodeImageResizer.MAXWIDTH = screen.width;
+} else {
+    NcodeImageResizer.MAXWIDTH = 640;
+}
+NcodeImageResizer.MAXHEIGHT = 0;
+
+NcodeImageResizer.BBURL = 'http://www.svrider.com/forum';
+
+vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image.';
+vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image.';
+vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+
+var currentPagePath='http%3A%2F%2Fwww.svrider.com%2Fforum%2Fforum%2Fshowthread.php%3Ft%3D361546';
+vbphrase['vbp_ncode_click_for_moderation'] = 'Report this image';
+
+var reportImageUrl='http://abuse.verticalscope.com/report/index.php?referrer={1}&imageurl={2}';
+//-->
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3641787-16']);
+  _gaq.push(['_setDomainName', '.svrider.com']);
+  _gaq.push(['_setCustomVar',1,'grp','guest', 2]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6036030", c4: "svrider.com" });
+(function() {
+var s = document.createElement("script"), el =
+document.getElementsByTagName("script")[0]; s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" :
+"http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})(); </script>
+<noscript> <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036030&c4=svrider.com&cv=2.0&cj=1" alt="" /> </noscript>
+
+
+
+
+<script type="text/javascript">
+netseer_tag_id="27094"; 
+netseer_publisher_label="svrider.com";
+</script>
+<script async src="//ps.ns-cdn.com/dsatserving2/scripts/ns_vmtag.js" type="text/javascript"></script>
+
+<!-- Video Player -->
+<script type="text/javascript" src="/videoplayer/jwplayer.js?v=1407420045"></script>
+<script type="text/javascript" src="/videoplayer/playerscripts.min.js.php?v=1407442546"></script>
+<!-- /Video Player -->
+
+        <!-- App Indexing for Google Search -->
+        <link href="android-app://com.quoord.tapatalkpro.activity/tapatalk/www.svrider.com/forum?location=topic&amp;fid=17&amp;tid=361546&amp;channel=google-indexing" rel="alternate" />
+        <link href="ios-app://307880732/tapatalk/www.svrider.com/forum?location=topic&amp;fid=17&amp;tid=361546&amp;channel=google-indexing" rel="alternate" />
+        
+        <meta property="al:android:package" content="com.quoord.tapatalkpro.activity" />
+        <meta property="al:android:url" content="tapatalk://www.svrider.com/forum?location=topic&amp;fid=17&amp;tid=361546&amp;channel=facebook-indexing" />
+        <meta property="al:android:app_name" content="Tapatalk" />
+        <meta property="al:ios:url" content="tapatalk://www.svrider.com/forum?location=topic&amp;fid=17&amp;tid=361546&amp;channel=facebook-indexing" />
+        <meta property="al:ios:app_store_id" content="307880732" />
+        <meta property="al:ios:app_name" content="Tapatalk" />
+        
+        <!-- twitter app card start-->
+        <!-- https://dev.twitter.com/docs/cards/types/app-card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@tapatalk" />
+        <meta name="twitter:title" content="Mounting speedometer on a naked 2nd gen." />
+        <meta name="twitter:description" content="Suzuki SV650 Forum: SV650, SV1000, Gladius Forums" />
+        
+        <meta name="twitter:app:id:iphone" content="307880732" />
+        <meta name="twitter:app:url:iphone" content="tapatalk://www.svrider.com/forum?location=topic&amp;fid=17&amp;tid=361546&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:ipad" content="307880732" />
+        <meta name="twitter:app:url:ipad" content="tapatalk://www.svrider.com/forum?location=topic&amp;fid=17&amp;tid=361546&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:googleplay" content="com.quoord.tapatalkpro.activity" />
+        <meta name="twitter:app:url:googleplay" content="tapatalk://www.svrider.com/forum?location=topic&amp;fid=17&amp;tid=361546&amp;channel=twitter-indexing" />
+        <!-- twitter app card -->
+        <script type="text/javascript" src="//d1r55yzuc1b1bw.cloudfront.net/vsapi.all.min.js"></script>
+	<title> Mounting speedometer on a naked 2nd gen. - Suzuki SV650 Forum: SV650, SV1000, Gladius Forums</title>
+	<script type="text/javascript" src="clientscript/vbulletin_post_loader.js?v=387"></script>
+	<style type="text/css" id="vbulletin_showthread_css">
+	<!--
+	
+	#links div { white-space: nowrap; }
+	#links img { vertical-align: middle; }
+	-->
+	</style>
+<!-- Taboola Header -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:"auto"});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement("script"),
+  document.getElementsByTagName("script")[0],
+  '//cdn.taboola.com/libtrc/verticalscope-network/loader.js');
+</script>
+<!-- /Taboola Header -->
+</head>
+<body onload="">
+
+<script>
+var captify_kw_query_11825 = "";
+(function(c,a,p,t,i,f,y){i=c.createElement(a);t=c.getElementsByTagName(a)[0];i.type="text/javascript";i.async=true;i.src=p;t.parentNode.insertBefore(i,t);})(document,"script","https://p.cpx.to/p/11825/px.js");
+</script>
+
+
+
+
+<!-- Tapatalk Detect body start -->
+<script type="text/javascript">if (typeof(tapatalkDetect) == "function") tapatalkDetect()</script>
+<!-- Tapatalk Detect banner body end -->
+
+<SCRIPT LANGUAGE="JavaScript"><!--    
+OAS_AD('x60');
+//--></SCRIPT>
+
+<!-- logo -->
+<a name="top"></a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+<tr>
+    <td background="http://www.svrider.com/forum/images/dark_vb/misc/header_repeat.gif" width="100%" height="27" colspan="2" valign="top">&nbsp;</td>
+</tr>
+<tr>
+	<td  background="http://www.svrider.com/forum/images/dark_vb/misc/dark_vb_bg.gif" width="100%" height="124" valign="top" align="left"><a href="http://www.svrider.com/forum/"><img src="/forum/images/dark_vb/misc/svrider_2016.jpg" border="0" alt="Suzuki SV650 Forum: SV650, SV1000, Gladius Forums" /></a>
+	</td>
+<td   background="http://www.svrider.com/forum/images/dark_vb/misc/dark_vb_bg.gif" width="100%" height="124" align="right">
+<!--/* 468x60 Top OpenX */-->
+
+<script type='text/javascript'><!--//<![CDATA[
+   document.MAX_ct0 ='INSERT_CLICKURL_HERE';
+
+   var m3_u = (location.protocol=='https:'?'https://ads.verticalscope.com/www/delivery/ajs.php':'http://ads.verticalscope.com/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=347&amp;block=1");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
+       document.write ("&amp;ct0=" + escape(document.MAX_ct0));
+   }
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ads.verticalscope.com/www/delivery/ck.php?n=a05d2aba&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.verticalscope.com/www/delivery/avw.php?zoneid=347&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a05d2aba&amp;ct0=INSERT_CLICKURL_HERE' border='0' alt='' /></a></noscript>
+
+
+<div style=" position: relative; left: -50px; top: 36px; z-index:2; margin-top: 15px; width:auto; white-space: nowrap;">
+<table border="0" cellpadding="0" cellspacing="0"><tr>
+<td width="260" nowrap="nowrap" valign="top" style="padding-top:3px;"></td>
+<td  nowrap="nowrap" valign="top" style="padding-top:3px;">		<script language='JavaScript1.1'>
+         <!-- 
+         function redirectEnter(form){
+          var eBayURL = 'http://rover.ebay.com/rover/1/711-53200-19255-0/1?type=3&campid=5336328281&toolid=10001&customid=';
+          for (var i=0;i<form.elements.length;i++){
+           var e = form.elements[i];
+           if ((e.name === "p")){
+            eBayURL += "&ext" + "=" + e.value.replace(" ", "+") + "&satitle" + "=" + e.value.replace(" ", "+");
+           }
+          }
+          parent.location = eBayURL;
+         }
+         // -->
+         </script>
+        	<div id="DR-ebay-search-boxCSS">
+                 <form onsubmit="redirectEnter(this); return false;" method="get" id="DR-ebay-searchCSS">
+                 	<input id="p" type="text" name="p" style="width:100px" maxlength="190" >
+					<input type="submit" name="submit" value="Search" /> 				
+                
+              <script language="JavaScript1.1">
+         <!-- 
+		 (function() { var f = document.getElementById('DR-ebay-searchCSS'); if (!f) { f = document.getElementById('DR-ebay-searchCSS'); } if (f && f.p) { var p = f.p; var n = navigator; var l = location; if (n.platform == 'Win32') { p.style.cssText = 'border: 1px solid #7e9db9; padding: 2px;'; } var b = function() { if (p.value == '') { p.style.background = '#FFFFFF url(http://www.drivingrevenue.com/images/ebay_watermark.gif) left no-repeat'; } }; var f = function() { p.style.background = '#ffffff'; }; p.onfocus = f; p.onblur = b; if (!/[&?]p=[^&]/.test(l.search)) { b(); } } })();
+// -->
+</script>
+               <img style='text-decoration:none; border: 0; padding: 0; margin: 0;' src='http://rover.ebay.com/ar/1/711-53200-19255-0/1?mpt=[CacheBuster]&adtype=1&size=1x1&type=3&campid=5336328281&toolid=10001'>
+
+ </form>
+             </div></td>
+</tr></table>
+
+	</td>
+</tr>
+</table>
+<!-- /logo -->
+
+
+<!-- content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+
+
+
+
+
+<br />
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+<tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr valign="bottom">
+				<td><a href="#" onclick="history.back(1); return false;"><img src="/forum/images/dark_vb/misc/navbits_start.gif" alt="Go Back" border="0" /></a></td>
+				<td>&nbsp;</td>
+				<td width="100%"><span class="navbar"><a href="forums.php?s=463847793b23c1daa8e6a89bfa37296c" accesskey="1">Suzuki SV650 Forum: SV650, SV1000, Gladius Forums</a></span> 
+	<span class="navbar">&gt; <a href="forumdisplay.php?s=463847793b23c1daa8e6a89bfa37296c&amp;f=5">Workshop</a></span>
+
+
+	<span class="navbar">&gt; <a href="forumdisplay.php?s=463847793b23c1daa8e6a89bfa37296c&amp;f=17">SV650 Gen2 (03-15) Tech</a></span>
+
+</td>
+			</tr>
+			<tr>
+				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="/forum/showthread.php?t=361546"><img class="inlineimg" src="/forum/images/dark_vb/misc/navbits_finallink_ltr.gif" alt="Reload this Page" border="0" /></a> <strong>
+	 Mounting speedometer on a naked 2nd gen.
+
+</strong></td>
+			</tr>
+			</table>
+		
+	</td>
+
+	<td class="alt2" nowrap="nowrap" style="padding:0px">
+		<!-- login form -->
+		<form action="login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+		<table cellpadding="0" cellspacing="3" border="0">
+		<tr>
+			<td class="smallfont" style="white-space: nowrap;"><label for="navbar_username">User Name</label></td>
+			<td><input type="text" class="bginput" style="font-size: 11px" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" /></td>
+			<td class="smallfont" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" />Remember Me?</label></td>
+		</tr>
+		<tr>
+			<td class="smallfont"><label for="navbar_password">Password</label></td>
+			<td><input type="password" class="bginput" style="font-size: 11px" name="vb_login_password" id="navbar_password" size="10" tabindex="102" /></td>
+			<td><input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /></td>
+		</tr>
+		</table>
+		<input type="hidden" name="s" value="463847793b23c1daa8e6a89bfa37296c" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" name="do" value="login" />
+		<input type="hidden" name="vb_login_md5password" />
+		<input type="hidden" name="vb_login_md5password_utf" />
+		</form>
+		<!-- / login form -->
+<font color="#ffffff">New User? <a href="register.php?s=463847793b23c1daa8e6a89bfa37296c" rel="nofollow" class="smallfont">Register</a></font> -  
+<font color=blue><a href="login.php?do=lostpw" class="smallfont">Forgot Password</a></font>
+	</td>
+
+</tr>
+</table>
+<!-- / breadcrumb, login, pm info -->
+
+<!-- nav buttons bar -->
+<table class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center" style="border-top-width:0px">
+<tr align="center">
+	<tr align="center">
+		
+			<td class="vbmenu_control"><a href="register.php?s=463847793b23c1daa8e6a89bfa37296c" rel="nofollow">Register</a></td>
+		
+		<td class="vbmenu_control"><a href="http://www.svrider.com/forum/forums.php?s=463847793b23c1daa8e6a89bfa37296c">Forums</a></td>
+		
+		
+		<td class="vbmenu_control"><a rel="help" href="faq.php?s=463847793b23c1daa8e6a89bfa37296c" accesskey="5">FAQ</a></td>
+		<td class="vbmenu_control"><a href="http://www.svrider.com/forum/gallery/">Gallery</a></td>
+	    <td class="vbmenu_control"><a href="memberlist.php?s=463847793b23c1daa8e6a89bfa37296c">Members List</a></td>
+	    <td class="vbmenu_control"><a href="calendar.php?s=463847793b23c1daa8e6a89bfa37296c">Calendar</a></td>
+		
+			
+				<td class="vbmenu_control"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c" accesskey="4">Search</a></td>
+				
+				<td class="vbmenu_control"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=getdaily" accesskey="2">Today's Posts</a></td>
+				
+			
+			<td class="vbmenu_control"><a href="forumdisplay.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=markread&amp;markreadhash=guest" rel="nofollow">Mark Forums Read</a></td>
+			
+		
+		<td class='vbmenu_control'><a href=http://www.svrider.com/escrow.html>Motorcycle Escrow</a></td><td class='vbmenu_control'><a href=http://www.svrider.com/suzuki-sv650-motorcycle-insurance.html>Insurance</a></td>
+		
+		</tr>
+	</table>
+<!-- / nav buttons bar -->
+
+<br />
+
+
+
+
+	<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+	<tr>
+		<td class="alt1" width="100%"><strong>SV650 Gen2 (03-15) Tech</strong> <span class="smallfont">Info, advice or questions specific to the 2003-2015 model SV650.</span></td>
+	</tr>
+	</table>
+	<br />
+
+
+
+
+
+
+<div style="padding:10px; width:728px; margin:auto;"><div style='width:100%; text-align:center;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-2';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[Svrider.com]';
+var rp_inventory = { vsdomain:'Svrider.com', amznbucket: amazonRubiconKeys, riskwords: 'true' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div></div>
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tr valign="bottom">
+	
+		<td class="smallfont"><a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;noquote=1&amp;p=5029530" rel="nofollow"><img src="/forum/images/dark_vb/buttons/reply.gif" alt="Reply" border="0" /></a></td>
+	
+	
+</tr>
+</table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="#goto_threadtools">Thread Tools</a>
+		
+	</td>
+	
+	
+	
+	<td class="vbmenu_control" id="displaymodes" nowrap="nowrap">
+		<a href="#goto_displaymodes">Display Modes</a>
+		
+	</td>
+	
+
+	
+
+</tr>
+</table>
+<!-- / toolbar -->
+
+
+
+<!-- end content table -->
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+
+
+
+
+<div id="posts">
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+        <table class="tborder" cellspacing="1" cellpadding="3" border="0" align="center" width="100%">
+          <TR>
+            <TD class='tcat' align='center'><div id='Svrider_com_1198x24_TopTextLink_PS_Forum' style='width:1198px; height:24px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('Svrider_com_1198x24_TopTextLink_PS_Forum'); });
+</script>
+</div></TD>
+          </TR>
+        </table>
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- post #5029530 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit5029530" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post5029530" class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-right: 0px" >
+			<!-- status icon and date -->
+			<a name="post5029530"><img class="inlineimg" src="/forum/images/dark_vb/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			10-09-2016, 07:14 PM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="showpost.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029530&amp;postcount=1" target="new" rel="nofollow" id="postcount5029530" name="1"><strong>1</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="background-image: url(images/dark_vb/misc/forum-post-bg.jpg); background-repeat: no-repeat;" width="175" style="border: 1px solid #0D0F0F; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_5029530">
+				
+				<a class="bigusername" href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801">Nas</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_5029530", true); </script>
+				
+			</div>
+
+			<div class="smallfont">Junior Member</div>
+			
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801"><img src="image.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801&amp;dateline=1477185067" width="80" height="45" alt="Nas's Avatar" border="0" /></a>
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Join Date: Nov 2014</div>
+				<div>Location: Ann Arbor, MI</div>
+				<div>Bikes: Suzuki, SV650N 2003</div>
+				<div>Miles Kms: 19000</div>
+				
+				<div>
+					Posts: 5
+				</div>
+				
+				
+				
+				
+				<div>    </div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_5029530" style="border-right: 1px solid #0D0F0F">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong>Mounting speedometer on a naked 2nd gen.</strong>
+			</div>
+			<hr size="1" style="color:#0D0F0F; background-color:#0D0F0F" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_5029530">
+			
+			Hi, so I wanted to replace my handlebars and had to take off the speedometer. I have put everything back together now, but (stupidly) I cannot figure out how to put the speedometer on the bike again and what to do with the cable guides. <br />
+<br />
+Could someone please post a couple of pics of how it all fits together. It's an OEM speedometer on a 2nd gen naked. <br />
+<br />
+Your help is appreciated. Thanks in advance. <br />
+<br />
+<br />
+Sent from my iPhone using Tapatalk
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+<span id="nointelliTXT">
+<script id="mNCC" language="javascript">  medianet_width='728';  medianet_height= '250';  medianet_crid='743786283';  </script>  <script id="mNSC" src="http://contextual.media.net/nmedianet.js?cid=8CUBA2XMP" language="javascript"></script> 
+</span>
+
+
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #0D0F0F; border-top: 0px">
+		<img class="inlineimg" src="/forum/images/dark_vb/statusicon/user_offline.gif" alt="Nas is offline" border="0" />
+
+
+		
+		
+		
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #0D0F0F; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;p=5029530" rel="nofollow"><img src="/forum/images/dark_vb/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+<!-- post 5029530 popup menu -->
+<div class="vbmenu_popup" id="postmenu_5029530_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Nas</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newpm&amp;u=100801" rel="nofollow">Send a private message to Nas</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=finduser&amp;u=100801" rel="nofollow">Find More Posts by Nas</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 5029530 popup menu -->
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #5029530 -->
+<div id="edit_vp1" class="vs_dfp_standard_postbit_container" style="padding:0px 0px 6px 0px; ">
+<table class="tborder vs_dfp_standard_postbit_ad" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+    <tr>
+        <td class="thead" style="line-height:1.4em;" colspan="2">
+            <div>
+                <span style="float:right;font-weight:normal">
+                    <a href="http://www.svrider.com/forum/register.php">Remove Advertisements</a>
+                </span>
+            </div>Sponsored Links
+		</td>
+    </tr>
+	<tr valign="top">
+        <td class="alt2" width="175px">
+            <div>
+                <a class="bigusername" href="http://www.svrider.com/forum">Svrider.com</a>
+            </div>
+            <div class="smallfont">Advertisement</div>
+            <div>&nbsp;<br /></div>
+        </td>
+        <td class="alt1" >
+            <table cellpadding="2" cellspacing="2" border="0" width="100%" align="left">
+                <tr>
+                    <td align="left"><div style='width:100%; text-align:left;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-15';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[Svrider.com]';
+var rp_inventory = { vsdomain:'Svrider.com', amznbucket: amazonRubiconKeys, riskwords: 'true' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div></td>
+                    <td></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table></div><!-- post #5029554 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit5029554" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post5029554" class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-right: 0px" >
+			<!-- status icon and date -->
+			<a name="post5029554"><img class="inlineimg" src="/forum/images/dark_vb/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			10-09-2016, 08:15 PM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="showpost.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029554&amp;postcount=2" target="new" rel="nofollow" id="postcount5029554" name="2"><strong>2</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="background-image: url(images/dark_vb/misc/forum-post-bg.jpg); background-repeat: no-repeat;" width="175" style="border: 1px solid #0D0F0F; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_5029554">
+				
+				<a class="bigusername" href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237">bighammer</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_5029554", true); </script>
+				
+			</div>
+
+			<div class="smallfont">Supporting Member</div>
+			<div class="smallfont"><img src="images/svrider-member_premium2.jpg" alt="" border="" /></div>
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237"><img src="image.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237&amp;dateline=1293118051" width="100" height="62" alt="bighammer's Avatar" border="0" /></a>
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Join Date: Oct 2007</div>
+				<div>Location: Traverse City, MI</div>
+				<div>Bikes: 2004 SV650 Yellow</div>
+				
+				
+				<div>
+					Posts: 5,331
+				</div>
+				
+				
+				
+				
+				<div>    </div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_5029554" style="border-right: 1px solid #0D0F0F">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong>Re: Mounting speedometer on a naked 2nd gen.</strong>
+			</div>
+			<hr size="1" style="color:#0D0F0F; background-color:#0D0F0F" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_5029554">
+			
+			<img src="http://cdn1.bikebandit-images.com/schematics/schematics/suzuki/suz013/su0210017104.gif" border="0" alt="" onload="NcodeImageResizer.createOn(this);" />
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+		<!-- sig -->
+			<div>
+				__________________<br />
+				Yes, I'm the <a href="http://www.svrider.com/forum/showthread.php?t=142220&amp;highlight=hammergrips" target="_blank">HammerGrips</a> guy.  <img src="http://www.world-of-smilies.com/wos_menschen/100.gif" border="0" alt="" />
+			</div>
+		<!-- / sig -->
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #0D0F0F; border-top: 0px">
+		<img class="inlineimg" src="/forum/images/dark_vb/statusicon/user_offline.gif" alt="bighammer is offline" border="0" />
+
+
+		
+		
+		
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #0D0F0F; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;p=5029554" rel="nofollow"><img src="/forum/images/dark_vb/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+<!-- post 5029554 popup menu -->
+<div class="vbmenu_popup" id="postmenu_5029554_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">bighammer</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newpm&amp;u=14237" rel="nofollow">Send a private message to bighammer</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=finduser&amp;u=14237" rel="nofollow">Find More Posts by bighammer</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 5029554 popup menu -->
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #5029554 --><!-- post #5029626 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit5029626" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post5029626" class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-right: 0px" >
+			<!-- status icon and date -->
+			<a name="post5029626"><img class="inlineimg" src="/forum/images/dark_vb/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			10-09-2016, 10:41 PM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="showpost.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029626&amp;postcount=3" target="new" rel="nofollow" id="postcount5029626" name="3"><strong>3</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="background-image: url(images/dark_vb/misc/forum-post-bg.jpg); background-repeat: no-repeat;" width="175" style="border: 1px solid #0D0F0F; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_5029626">
+				
+				<a class="bigusername" href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801">Nas</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_5029626", true); </script>
+				
+			</div>
+
+			<div class="smallfont">Junior Member</div>
+			
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801"><img src="image.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801&amp;dateline=1477185067" width="80" height="45" alt="Nas's Avatar" border="0" /></a>
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Join Date: Nov 2014</div>
+				<div>Location: Ann Arbor, MI</div>
+				<div>Bikes: Suzuki, SV650N 2003</div>
+				<div>Miles Kms: 19000</div>
+				
+				<div>
+					Posts: 5
+				</div>
+				
+				
+				
+				
+				<div>    </div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_5029626" style="border-right: 1px solid #0D0F0F">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong>Re: Mounting speedometer on a naked 2nd gen.</strong>
+			</div>
+			<hr size="1" style="color:#0D0F0F; background-color:#0D0F0F" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_5029626">
+			
+			Thanks bighammer. However, my question was how to (mount) the speedometer to the bike's frame. Sorry for any ambiguity in the first question.  <br />
+<br />
+<br />
+Sent from my iPhone using Tapatalk
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #0D0F0F; border-top: 0px">
+		<img class="inlineimg" src="/forum/images/dark_vb/statusicon/user_offline.gif" alt="Nas is offline" border="0" />
+
+
+		
+		
+		
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #0D0F0F; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;p=5029626" rel="nofollow"><img src="/forum/images/dark_vb/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+<!-- post 5029626 popup menu -->
+<div class="vbmenu_popup" id="postmenu_5029626_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Nas</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newpm&amp;u=100801" rel="nofollow">Send a private message to Nas</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=finduser&amp;u=100801" rel="nofollow">Find More Posts by Nas</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 5029626 popup menu -->
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #5029626 --><!-- post #5029706 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit5029706" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post5029706" class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-right: 0px" >
+			<!-- status icon and date -->
+			<a name="post5029706"><img class="inlineimg" src="/forum/images/dark_vb/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			10-10-2016, 01:22 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="showpost.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029706&amp;postcount=4" target="new" rel="nofollow" id="postcount5029706" name="4"><strong>4</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="background-image: url(images/dark_vb/misc/forum-post-bg.jpg); background-repeat: no-repeat;" width="175" style="border: 1px solid #0D0F0F; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_5029706">
+				
+				<a class="bigusername" href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237">bighammer</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_5029706", true); </script>
+				
+			</div>
+
+			<div class="smallfont">Supporting Member</div>
+			<div class="smallfont"><img src="images/svrider-member_premium2.jpg" alt="" border="" /></div>
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237"><img src="image.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237&amp;dateline=1293118051" width="100" height="62" alt="bighammer's Avatar" border="0" /></a>
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Join Date: Oct 2007</div>
+				<div>Location: Traverse City, MI</div>
+				<div>Bikes: 2004 SV650 Yellow</div>
+				
+				
+				<div>
+					Posts: 5,331
+				</div>
+				
+				
+				
+				
+				<div>    </div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_5029706" style="border-right: 1px solid #0D0F0F">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong>Re: Mounting speedometer on a naked 2nd gen.</strong>
+			</div>
+			<hr size="1" style="color:#0D0F0F; background-color:#0D0F0F" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_5029706">
+			
+			It's been a while, but if I remember correctly, it's the 2 screws (#16) thru the X-shaped bracket (#12) that go up into the underside of the top triple. <img src="http://forum.svrider.com/images/smilies/wink.gif" border="0" alt="" title="Wink" class="inlineimg" />
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+		<!-- sig -->
+			<div>
+				__________________<br />
+				Yes, I'm the <a href="http://www.svrider.com/forum/showthread.php?t=142220&amp;highlight=hammergrips" target="_blank">HammerGrips</a> guy.  <img src="http://www.world-of-smilies.com/wos_menschen/100.gif" border="0" alt="" />
+			</div>
+		<!-- / sig -->
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #0D0F0F; border-top: 0px">
+		<img class="inlineimg" src="/forum/images/dark_vb/statusicon/user_offline.gif" alt="bighammer is offline" border="0" />
+
+
+		
+		
+		
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #0D0F0F; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;p=5029706" rel="nofollow"><img src="/forum/images/dark_vb/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+<!-- post 5029706 popup menu -->
+<div class="vbmenu_popup" id="postmenu_5029706_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">bighammer</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=14237">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newpm&amp;u=14237" rel="nofollow">Send a private message to bighammer</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=finduser&amp;u=14237" rel="nofollow">Find More Posts by bighammer</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 5029706 popup menu -->
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #5029706 --><!-- post #5029794 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit5029794" style="padding:0px 0px 6px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post5029794" class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-right: 0px" >
+			<!-- status icon and date -->
+			<a name="post5029794"><img class="inlineimg" src="/forum/images/dark_vb/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			10-10-2016, 10:09 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="showpost.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029794&amp;postcount=5" target="new" rel="nofollow" id="postcount5029794" name="5"><strong>5</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="background-image: url(images/dark_vb/misc/forum-post-bg.jpg); background-repeat: no-repeat;" width="175" style="border: 1px solid #0D0F0F; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_5029794">
+				
+				<a class="bigusername" href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=60009">r0ckrat</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_5029794", true); </script>
+				
+			</div>
+
+			<div class="smallfont">Greetings Program</div>
+			
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=60009"><img src="image.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=60009&amp;dateline=1464192726" width="100" height="100" alt="r0ckrat's Avatar" border="0" /></a>
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Join Date: Jun 2013</div>
+				<div>Location: Long Beach</div>
+				<div>Bikes: '06 SV650N</div>
+				<div>Miles Kms: 38,000+</div>
+				
+				<div>
+					Posts: 5,379
+				</div>
+				
+				
+				
+				
+				<div>    </div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_5029794" style="border-right: 1px solid #0D0F0F">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong>Re: Mounting speedometer on a naked 2nd gen.</strong>
+			</div>
+			<hr size="1" style="color:#0D0F0F; background-color:#0D0F0F" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_5029794">
+			
+			<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="6" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="alt2" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>bighammer</strong>
+					<a href="showthread.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029706#post5029706" rel="nofollow"><img class="inlineimg" src="/forum/images/dark_vb/buttons/viewpost.gif" border="0" alt="View Post" /></a>
+				</div>
+				<div style="font-style:italic">It's been a while, but if I remember correctly, it's the 2 screws (#16) thru the X-shaped bracket (#12) that go up into the underside of the top triple. <img src="http://forum.svrider.com/images/smilies/wink.gif" border="0" alt="" title="Wink" class="inlineimg" /></div>
+			
+		</td>
+	</tr>
+	</table>
+</div>Bingo.
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+		<!-- sig -->
+			<div>
+				__________________<br />
+				<div align="center">Dory - a blue K6 Naked. <a href="http://www.svrider.com/forum/showthread.php?t=222481" target="_blank">Build thread</a> and <a href="http://www.svrider.com/forum/showthread.php?t=222489" target="_blank">Comment thread</a> - also <a href="http://pensandpixels.com/sv/sv_colors.html" target="_blank">The SV Colors Compendium</a> - Back up!</div>
+			</div>
+		<!-- / sig -->
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #0D0F0F; border-top: 0px">
+		<img class="inlineimg" src="/forum/images/dark_vb/statusicon/user_offline.gif" alt="r0ckrat is offline" border="0" />
+
+
+		
+		
+		
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #0D0F0F; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;p=5029794" rel="nofollow"><img src="/forum/images/dark_vb/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+<!-- post 5029794 popup menu -->
+<div class="vbmenu_popup" id="postmenu_5029794_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">r0ckrat</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=60009">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newpm&amp;u=60009" rel="nofollow">Send a private message to r0ckrat</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=finduser&amp;u=60009" rel="nofollow">Find More Posts by r0ckrat</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 5029794 popup menu -->
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #5029794 --><!-- post #5029818 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+	<div id="edit5029818" style="padding:0px 0px 6px 0px">
+	
+
+
+
+<table id="post5029818" class="tborder" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-right: 0px" >
+			<!-- status icon and date -->
+			<a name="post5029818"><img class="inlineimg" src="/forum/images/dark_vb/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			10-10-2016, 10:21 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #0D0F0F; border-left: 0px" align="right">
+			&nbsp;
+			#<a href="showpost.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029818&amp;postcount=6" target="new" rel="nofollow" id="postcount5029818" name="6"><strong>6</strong></a>
+			
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="background-image: url(images/dark_vb/misc/forum-post-bg.jpg); background-repeat: no-repeat;" width="175" style="border: 1px solid #0D0F0F; border-top: 0px; border-bottom: 0px">
+
+			<div id="postmenu_5029818">
+				
+				<a class="bigusername" href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801">Nas</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_5029818", true); </script>
+				
+			</div>
+
+			<div class="smallfont">Junior Member</div>
+			
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801"><img src="image.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801&amp;dateline=1477185067" width="80" height="45" alt="Nas's Avatar" border="0" /></a>
+				</div>
+			
+
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Join Date: Nov 2014</div>
+				<div>Location: Ann Arbor, MI</div>
+				<div>Bikes: Suzuki, SV650N 2003</div>
+				<div>Miles Kms: 19000</div>
+				
+				<div>
+					Posts: 5
+				</div>
+				
+				
+				
+				
+				<div>    </div>
+			</div>
+
+	</td>
+	
+	<td class="alt1" id="td_post_5029818" style="border-right: 1px solid #0D0F0F">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong>Re: Mounting speedometer on a naked 2nd gen.</strong>
+			</div>
+			<hr size="1" style="color:#0D0F0F; background-color:#0D0F0F" />
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_5029818">
+			
+			Got that part <img src="http://emoji.tapatalk-cdn.com/emoji16.png" /> what about the metal cable guides? There are three of them. <br />
+<br />
+<br />
+Sent from my iPhone using Tapatalk
+		</div>
+		<!-- / message -->
+
+		
+
+		
+		
+
+		
+
+		
+
+		
+
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #0D0F0F; border-top: 0px">
+		<img class="inlineimg" src="/forum/images/dark_vb/statusicon/user_offline.gif" alt="Nas is offline" border="0" />
+
+
+		
+		
+		
+		
+		&nbsp;
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #0D0F0F; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+		
+		
+		
+			<a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;p=5029818" rel="nofollow"><img src="/forum/images/dark_vb/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+
+
+<!-- post 5029818 popup menu -->
+<div class="vbmenu_popup" id="postmenu_5029818_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Nas</td>
+	</tr>
+	
+		<tr><td class="vbmenu_option"><a href="member.php?s=463847793b23c1daa8e6a89bfa37296c&amp;u=100801">View Public Profile</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="private.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newpm&amp;u=100801" rel="nofollow">Send a private message to Nas</a></td></tr>
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="search.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=finduser&amp;u=100801" rel="nofollow">Find More Posts by Nas</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 5029818 popup menu -->
+
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #5029818 --><!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+<div id="edit_vp2" class="vs_dfp_standard_postbit_container" style="padding:0px 0px 6px 0px; ">
+<table class="tborder vs_dfp_standard_postbit_ad" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="margin-bottom:6px;">
+        <tr>
+        <td class="thead" style="line-height:1.4em;" colspan="2">
+            <div>
+                <span style="float:right;font-weight:normal">
+                    <a href="http://www.svrider.com/forum/register.php">Remove Advertisements</a>
+                </span>
+            </div>Sponsored Links
+        </td>
+    </tr>
+	<tr valign="top">
+        <td class="alt2" width="175px">
+            <div>
+                <a class="bigusername" href="http://www.svrider.com/forum">Svrider.com</a>
+            </div>
+            <div class="smallfont">Advertisement</div>
+            <div>&nbsp;<br /></div>
+        </td>        <td class="alt1">
+            <div style='width:100%; text-align:left;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-15';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[Svrider.com]';
+var rp_inventory = { vsdomain:'Svrider.com', riskwords: 'true' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div>
+        </td>
+    </tr>
+</table></div>
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+<table class="tborder" cellspacing="1" cellpadding="3" border="0" align="center" width="100%" style="padding-bottom">
+  <TR>
+    <TD class='tcat' align='center'><div id='Svrider_com_1198x24_BottomTextLink_PS_Forum' style='width:1198px; height:24px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('Svrider_com_1198x24_BottomTextLink_PS_Forum'); });
+</script>
+</div></TD>
+  </TR>
+</table>
+
+<div style="padding-bottom: 5px">
+</div>
+<div id="lastpost"></div></div>
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:-3px">
+<tr valign="top">
+	
+		<td class="smallfont"><a href="newreply.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=newreply&amp;noquote=1&amp;p=5029818" rel="nofollow"><img src="/forum/images/dark_vb/buttons/reply.gif" alt="Reply" border="0" /></a></td>
+	
+	
+</tr>
+</table>
+<!-- / controls below postbits -->
+
+
+
+
+
+
+
+<div style="padding:10px; width:728px; margin:auto;"><div style='width:100%; text-align:center;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-2';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[Svrider.com]';
+var rp_inventory = { vsdomain:'Svrider.com', riskwords: 'true' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div></div><!-- Taboola Content -->
+<div id="taboola-below-article-thumbnails-dark"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: "thumbnails-c-2",
+  container: "taboola-below-article-thumbnails-dark",
+    placement: "Below Article Thumbnails Dark - PS",
+    target_type: "mix"
+  });
+</script>
+<!-- /Taboola Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- next / previous links -->
+	<br />
+	<div class="smallfont" align="center">
+		<strong>&laquo;</strong>
+			<a href="showthread.php?s=463847793b23c1daa8e6a89bfa37296c&amp;t=361546&amp;goto=nextoldest" rel="nofollow">Previous Thread</a>
+			|
+			<a href="showthread.php?s=463847793b23c1daa8e6a89bfa37296c&amp;t=361546&amp;goto=nextnewest" rel="nofollow">Next Thread</a>
+		<strong>&raquo;</strong>
+	</div>
+<!-- / next / previous links -->
+
+
+
+
+
+
+
+<!-- controls for non-popup browsers -->
+
+
+<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px">
+<tr>
+	<td class="thead" colspan="2">Thread Tools<a name="goto_threadtools"></a></td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" colspan="2">
+
+	<!-- thread tools -->
+	<div class="smallfont">
+		
+
+			<div><img class="inlineimg" src="/forum/images/dark_vb/buttons/printer.gif" alt="Show Printable Version" vspace="1" /> <a href="printthread.php?s=463847793b23c1daa8e6a89bfa37296c&amp;t=361546" rel="nofollow">Show Printable Version</a></div>
+			<div><img class="inlineimg" src="/forum/images/dark_vb/buttons/sendtofriend.gif" alt="Email this Page" vspace="1" /> <a href="sendmessage.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=sendtofriend&amp;t=361546" rel="nofollow">Email this Page</a></div>
+		
+		
+		
+	</div>
+	<!-- / thread tools -->
+
+	</td>
+	
+</tr>
+
+<tr>
+	<td class="thead" colspan="2">Display Modes<a name="goto_displaymodes"></a></td>
+	
+</tr>
+<tr valign="top">
+	
+	<td class="alt2" colspan="2">
+
+	<!-- thread display modes -->
+
+	<div class="smallfont">
+		<div><img class="inlineimg" src="/forum/images/dark_vb/buttons/mode_linear.gif" alt="Linear Mode" vspace="1" /> <strong>Linear Mode</strong></div>
+		<div><img class="inlineimg" src="/forum/images/dark_vb/buttons/mode_hybrid.gif" alt="Hybrid Mode" vspace="1" /> <a href="showthread.php?s=463847793b23c1daa8e6a89bfa37296c&amp;mode=hybrid&amp;t=361546">Switch to Hybrid Mode</a></div>
+		<div><img class="inlineimg" src="/forum/images/dark_vb/buttons/mode_threaded.gif" alt="Threaded Mode" vspace="1" /> <a href="showthread.php?s=463847793b23c1daa8e6a89bfa37296c&amp;p=5029530&amp;mode=threaded#post5029530">Switch to Threaded Mode</a></div>
+	</div>
+
+	<!-- / thread display modes -->
+
+	</td>
+	
+	
+</tr>
+
+</table>
+<br />
+
+
+<!-- / controls for non-popup browsers -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+	<td class="smallfont" align="left">
+		<table class="tborder" cellpadding="6" cellspacing="1" border="0" width="210">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float:right" href="#top" onclick="return toggle_collapse('forumrules')"><img id="collapseimg_forumrules" src="/forum/images/dark_vb/buttons/collapse_thead.gif" alt="" border="0" /></a>
+		Posting Rules
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>You <strong>may not</strong> post new threads</div>
+		<div>You <strong>may not</strong> post replies</div>
+		<div>You <strong>may not</strong> post attachments</div>
+		<div>You <strong>may not</strong> edit your posts</div>
+		<hr />
+		
+		<div><a href="misc.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=bbcode" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="misc.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="misc.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>On</strong></div>
+		<div>HTML code is <strong>Off</strong></div>
+		<hr />
+		<div><a href="misc.php?s=463847793b23c1daa8e6a89bfa37296c&amp;do=showrules" target="_blank">Forum Rules</a></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		<tr>
+			<td>
+			<div class="smallfont" style="text-align:left; white-space:nowrap">
+	<form action="forumdisplay.php" method="get">
+	<input type="hidden" name="s" value="463847793b23c1daa8e6a89bfa37296c" />
+	<input type="hidden" name="daysprune" value="" />
+	<strong>Forum Jump</strong><br />
+	<select name="f" onchange="this.form.submit();">
+		<optgroup label="Site Areas">
+			<option value="cp" >User Control Panel</option>
+			<option value="pm" >Private Messages</option>
+			<option value="subs" >Subscriptions</option>
+			<option value="wol" >Who's Online</option>
+			<option value="search" >Search Forums</option>
+			<option value="home" >Forums Home</option>
+		</optgroup>
+		
+		<optgroup label="Forums">
+		<option value="3" class="fjdpth0" > Main Category</option>
+<option value="22" class="fjdpth1" >&nbsp; &nbsp;  Announcements</option>
+<option value="94" class="fjdpth1" >&nbsp; &nbsp;  Svrider Site Issue Forum</option>
+<option value="8" class="fjdpth1" >&nbsp; &nbsp;  SVRider Motorcycling Forum</option>
+<option value="56" class="fjdpth1" >&nbsp; &nbsp;  Sport Touring / Trips</option>
+<option value="19" class="fjdpth1" >&nbsp; &nbsp;  Racing Discussions</option>
+<option value="57" class="fjdpth1" >&nbsp; &nbsp;  SV-Rally Info</option>
+<option value="20" class="fjdpth1" >&nbsp; &nbsp;  Introduce Yourself</option>
+<option value="24" class="fjdpth1" >&nbsp; &nbsp;  FAQ Section</option>
+<option value="25" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Suspension, Brakes &amp; Tires</option>
+<option value="26" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Engine &amp; Transmission</option>
+<option value="27" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Non-Cosmetic Accessories</option>
+<option value="28" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Cosmetic Accessories</option>
+<option value="29" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Electrical</option>
+<option value="89" class="fjdpth1" >&nbsp; &nbsp;  Riding Skills, Safety Techniques &amp; Lessons Learned</option>
+<option value="16" class="fjdpth1" >&nbsp; &nbsp;  Open Forum</option>
+<option value="60" class="fjdpth1" >&nbsp; &nbsp;  Gladius forum</option>
+<option value="10" class="fjdpth1" >&nbsp; &nbsp;  Testing Forum</option>
+<option value="30" class="fjdpth1" >&nbsp; &nbsp;  The Suggestion Box</option>
+<option value="80" class="fjdpth0" > SVOTM</option>
+<option value="83" class="fjdpth1" >&nbsp; &nbsp;  SVOTM Winner</option>
+<option value="84" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  SVOTM archives</option>
+<option value="82" class="fjdpth1" >&nbsp; &nbsp;  SVOTM Submissions / Vote</option>
+<option value="81" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  SVOTM archives</option>
+<option value="7" class="fjdpth0" > Regional Forums</option>
+<option value="39" class="fjdpth1" >&nbsp; &nbsp;  USA Rider Forum</option>
+<option value="40" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  South East</option>
+<option value="41" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  South West</option>
+<option value="42" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  South Central</option>
+<option value="43" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  North East</option>
+<option value="44" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  North West</option>
+<option value="45" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  North Central</option>
+<option value="47" class="fjdpth1" >&nbsp; &nbsp;  Canadian Forum</option>
+<option value="48" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  CDN East</option>
+<option value="49" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  CDN Central</option>
+<option value="50" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  CDN West</option>
+<option value="46" class="fjdpth1" >&nbsp; &nbsp;  European Forum</option>
+<option value="51" class="fjdpth1" >&nbsp; &nbsp;  World - All remaining areas</option>
+<option value="5" class="fjdpth0" > Workshop</option>
+<option value="12" class="fjdpth1" >&nbsp; &nbsp;  SV Modifications and General Maintenance</option>
+<option value="13" class="fjdpth1" >&nbsp; &nbsp;  SV650 Gen1 (99-02) Tech</option>
+<option value="17" class="fjsel" selected="selected">&nbsp; &nbsp;  SV650 Gen2 (03-15) Tech</option>
+<option value="146" class="fjdpth1" >&nbsp; &nbsp;  SV650 Gen3 (17-...) Tech</option>
+<option value="70" class="fjdpth1" >&nbsp; &nbsp;  SFV650 Gladius (09-15) Tech</option>
+<option value="18" class="fjdpth1" >&nbsp; &nbsp;  SV1000 (03-07) Tech</option>
+<option value="65" class="fjdpth1" >&nbsp; &nbsp;  The Build Board</option>
+<option value="6" class="fjdpth0" > Marketplace</option>
+<option value="69" class="fjdpth1" >&nbsp; &nbsp;  SVRider.com Authorized Dealers</option>
+<option value="85" class="fjdpth1" >&nbsp; &nbsp;  Group Buy</option>
+<option value="23" class="fjdpth1" >&nbsp; &nbsp;  Vendor Area</option>
+<option value="14" class="fjdpth1" >&nbsp; &nbsp;  For Sale Section</option>
+<option value="33" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Bikes For Sale</option>
+<option value="34" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Parts For Sale</option>
+<option value="35" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Riding Gear For Sale</option>
+<option value="36" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Accessories For Sale</option>
+<option value="37" class="fjdpth2" >&nbsp; &nbsp; &nbsp; &nbsp;  Everything else...</option>
+<option value="63" class="fjdpth1" >&nbsp; &nbsp;  eBay Auction Links Section</option>
+<option value="15" class="fjdpth1" >&nbsp; &nbsp;  Wanted...</option>
+<option value="9" class="fjdpth1" >&nbsp; &nbsp;  Product Reviews</option>
+<option value="74" class="fjdpth0" > Platinum Vendor Area</option>
+<option value="71" class="fjdpth1" >&nbsp; &nbsp;  Riders Discount</option>
+<option value="61" class="fjdpth0" > Sponsor Forums</option>
+<option value="62" class="fjdpth1" >&nbsp; &nbsp;  SV Racing Parts</option>
+<option value="79" class="fjdpth1" >&nbsp; &nbsp;  DriverDeals</option>
+<option value="105" class="fjdpth1" >&nbsp; &nbsp;  Engine Ice Hi-Performance Coolant</option>
+<option value="38" class="fjdpth1" >&nbsp; &nbsp;  Motosliders Board</option>
+<option value="58" class="fjdpth1" >&nbsp; &nbsp;  Cheap Cycle Parts Board</option>
+<option value="66" class="fjdpth1" >&nbsp; &nbsp;  Luv Handles</option>
+<option value="67" class="fjdpth1" >&nbsp; &nbsp;  Ricor Racing Shocks</option>
+<option value="75" class="fjdpth1" >&nbsp; &nbsp;  TechSpec USA</option>
+<option value="86" class="fjdpth1" >&nbsp; &nbsp;  Teiz Motorsport</option>
+<option value="129" class="fjdpth1" >&nbsp; &nbsp;  Werks Parts</option>
+<option value="138" class="fjdpth1" >&nbsp; &nbsp;  Traxxion Dynamics</option>
+
+		</optgroup>
+		
+	</select><input type="submit" class="button" value="Go"  />
+	</form>
+</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!-- /forum rules and admin links -->
+
+<br />
+
+
+
+<script type="text/javascript">ame_toggle_view({other : 'true',post : 'true',blog : 'true',group : 'true',vm : 'true',sig : 'true'});</script><br />
+<div class="smallfont" align="center">All times are GMT -5. The time now is <span class="time">02:52 PM</span>.</div>
+<br />
+
+<!-- footer_search -->
+<div style="width:100%; text-align:center;"></div>
+<br />
+<!-- /footer_search -->
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- /content area table -->
+
+<form action="forums.php" method="get">
+	
+<table cellpadding="6" cellspacing="0" border="0" width="100%" class="page" align="center">
+<tr>
+<td>
+<div align="center">
+	<div class="smallfont" align="center">
+	<!-- Do not remove this copyright notice -->
+        Design Developed by CompleteGFX<br>
+	
+	<!-- Do not remove this copyright notice -->
+	</div>
+	
+	<div class="smallfont" align="center">
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove  or your scheduled tasks will cease to function -->
+	
+	vBulletin Security provided by 
+			<a rel="nofollow" href="http://www.dragonbyte-tech.com/vbecommerce.php?productid=123&do=product&utm_source=svrider.com&utm_campaign=product&utm_medium=vBSecurity&utm_content=Pro" target="_blank">vBSecurity v2.2.2 (Pro)</a> -
+			<a rel="nofollow" href="http://www.dragonbyte-tech.com/?utm_source=svrider.com&utm_campaign=site&utm_medium=vBSecurity&utm_content=Pro" target="_blank">vBulletin Mods &amp; Addons</a> Copyright &copy; 2016 DragonByte Technologies Ltd.<br />©1999-2009 SVRIDER.com.
+	</div>
+</div>
+</form><style>
+
+table.mo_network_bar td
+{
+padding:0px 0px 0px 6px;
+border-left: 1px solid #000000;
+min-width:80px; 
+}
+table.mo_network_bar td a:link, table.mo_network_bar td a:visited
+{
+text-decoration: none; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000
+}
+table.mo_network_bar td a:hover
+{
+text-decoration: underline; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000
+}
+
+.mo_network_bar_wrapper
+{
+        background: #f2f2f2;
+        color: #000000;
+        border: 1px solid #999999;
+}
+.vs-network-footer-empty-cell
+{
+	border:none !important;
+}
+</style>
+<table class="mo_network_bar_wrapper" width="100%" border="0" cellpadding="6" cellspacing="0">
+<tbody><tr>
+        <td style="padding: 10px 10px;">
+
+<table width="100%" border="0"><tbody><tr>
+          <td style="padding-left: 10px; width: 260px;">
+                <img title="Motorcycle News, Videos and Reviews" src="http://img.motorcycle.com/images/misc/ForumNetwork-Footer-MO.gif" alt="Motorcycle News, Videos and Reviews" width="218" border="0" height="86">
+              </td>
+
+                          <td></td>
+          <td><table class="mo_network_bar" width="100%" border="0" cellpadding="0" cellspacing="4">
+<tbody>
+    <tr>
+      <td><a href="http://www.gromforum.com" target="_blank"><strong>Honda Grom Forum</strong></a></td>
+      <td><a href="http://www.z125owners.com" target="_blank">strong>Kawasaki Z125 Forum</strong></a></td>
+      <td><a href="http://www.V-TwinForum.com" target="_blank"><strong>Harley Davidson Forum</strong></a></td>
+      <td><a href="http://www.600rr.net" target="_blank"><b>Honda 600RR Forum</b></a></td>
+      <td><a href="http://www.KawiForums.com" target="_blank"><strong>Kawasaki Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.R6-Forum.com"><strong>Yamaha R6 Forum</strong></a></td>
+      <td><a href="http://www.fz-09forums.com"><strong>Yamaha FZ-09 Forum</strong></td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="http://www.1199forums.com"><strong>1199 Panigale Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.africatwinforum.com"><strong>Honda Africa Twin Forum</strong></a><td>
+      <td><a href="http://www.roadglide.org" target="_blank"><strong>Roadglide Forum</strong></a></td>
+      <td><a href="http://www.1000RR.net" target="_blank"><strong>Honda CBR1000 Forum</strong></a> </td>
+      <td><a target="_blank" href="http://www.VulcanForums.com"><strong>Vulcan Forum</strong></a> </td>
+      <td><a target="_blank" href="http://www.R1-Forum.com"><strong>Yamaha R1 Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.r3-forums.com"><strong>Yamaha R3 Forum</strong></a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.DucatiMonster.org" target="_blank"><strong>Ducati Monster Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.harley-davidsonforums.com/"><strong>Harley Forums</strong></a> </td>
+      <td><a target="_blank" href="http://www.CBR250.net"><strong>Honda CBR250R Forum</strong></a></td>
+      <td><a href="http://www.ZX-10R.net" target="_blank"><strong>ZX10R Forum</strong></a></td>
+      <td><a href="http://www.RoadStarRaider.com" target="_blank"><strong>Star Raider Forum</strong></a></td>
+      <td><a href="http://www.vikingforum.org" target="_blank"><strong>Yamaha Viking Forum</strong></a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.Gixxer.com" target="_blank"><strong>Suzuki GSXR Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.1130CC.com"><strong>V-Rod Forums</strong></a></td>
+      <td><a href="http://www.HondaShadow.net" target="_blank"><strong>Honda Shadow Forum</strong></a></td>
+      <td><a href="http://www.KawasakiMotorcycle.org" target="_blank"><strong>Kawasaki Motorcycle Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.RSwarrior.com"><strong>Star Warrior Forum</strong></a> </td>
+      <td><a target="_blank" href="http://www.ktmduke390forum.com"><strong>KTM Duke 390 Forum</strong></a> </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.SVrider.com/" target="_blank"><strong>SV650 Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.S1000RRforum.com"><strong>BMW S1000RR Forum</strong></a></td>
+      <td><a href="http://www.FuryForums.com" target="_blank"><strong>Honda Fury Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.KawasakiVersys.com"><strong>Kawasaki Versys Forum</strong></a> </td>
+      <td><a href="http://www.PsychoBike.com" target="_blank"><strong>Drag Racing Forum</strong></a></td>
+      <td><a href="http://www.899panigale.org" target="_blank"><strong>Ducati 899 Panigale Forum</a></td>
+      <td><a href="http://www.959panigale.net" target="_blank"><strong>Ducati 959 Panigale Forum</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.StromTrooper.com/" target="_blank"><strong>Suzuki V-Strom</strong></a></td>
+      <td><a href="http://www.K1600Forum.com" target="_blank"><strong>BMW K1600</strong></a></td>
+      <td><a href="http://www.TriumphRat.net" target="_blank"><strong>Triumph Forum</strong></a></td> 
+      <td><a href="http://www.VictoryForums.com/" target="_blank"><strong>Victory Forums</strong></a></td>
+      <td><a target="_blank" href="http://www.Sportbikes.net"><strong>Sportbikes</strong></a> </td>
+      <td><a href="http://www.ninetowners.com/" target="_blank"><strong>BMW NineT Forum</strong></a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.VolusiaRiders.com/" target="_blank"><strong>Volusia Forum</strong></a></td>
+      <td><a href="http://www.F800Riders.org" target="_blank"><strong>BMW F800 Forum</strong></a></td>
+      <td><a href="http://www.Triumph675.net" target="_blank"><strong>Triumph 675 Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.MVAgusta.net"><strong>MV Agusta Forum</strong></a></td>
+      <td><a target="_blank" href="http://www.hdstreetforums.com"><strong>HD Street Forum</strong></a></td>
+      <td><a href="http://www.suzukigw250.org" target="_blank"><strong>Suzuki GW250 Forum</strong></a></td>
+    </tr>
+	<tr>
+      <td><a href="http://www.motorcycle.com/manufacturer/yamaha.html"><strong>Yamaha Motorcycles</strong></a></td>
+      <td><a href="http://www.victorygunner.org" target="_blank"><strong>Victory Gunner Forum</strong></a></td>
+      <td><a href="http://www.victorycharger.org" target="_blank"><strong>Victory Charger Forum</strong></a></td>
+      <td><a href="http://www.vultusforum.com" target="_blank"><strong>Honda Vultus Forum</strong></a></td>
+      <td><a href="http://www.hdlivewireforum.com" target="_blank"><strong>HD LiveWire Forum</strong></a></td>
+      <td><a href="http://www.ninjah2.org" target="_blank"><strong>Ninja H2 Forum</strong></a></td>
+    </tr>
+      <td><a href="http://www.bmwscramblerforum.com" target="_blank"><strong>BMW Scrambler Forum</strong></a><td>
+      <td><a href="http://www.ducatiscramblerforum.com" target="_blank"><strong>Ducati Scrambler Forum</strong></a></td>
+      <td><a href="http://www.ninja250sl.com" target="_blank"><strong>Kawasaki Ninja 250SL Forum</strong></a></td>
+      <td class="vs-network-footer-empty-cell"></td>
+      <td class="vs-network-footer-empty-cell"></td>
+      <td class="vs-network-footer-empty-cell"></td>
+      <td class="vs-network-footer-empty-cell"></td>
+    <tr>
+    </td>
+</tbody>
+</table></td>
+</tr>
+</tbody></table>
+        </td>
+</tr></tbody></table>
+
+</td>
+</tr>
+</table>
+<table cellpadding="6" cellspacing="0" border="0" width="100%" class="page" align="center">
+<tr>
+	
+		<td class="tfoot">
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="Quick Style Chooser">
+					<option value="2" class="" selected="selected">-- Dark vB Fluid (Free)</option>
+<option value="1" class="" >-- Default Style</option>
+
+				</optgroup>
+			</select>
+		</td>
+	
+	
+	<td class="tfoot" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				<a href="http://www.svrider.com/forum/sendmessage.php?s=463847793b23c1daa8e6a89bfa37296c" rel="nofollow" accesskey="9">Contact Us</a> -
+				<a href="http://www.svrider.com">Suzuki SV650 Forum: SV650, SV1000, Gladius Forums</a> -
+				
+				
+				<a href="archive/index.php">Archive</a> -
+				 
+				<a href="http://www.svrider.com/forum/privacy-policy.php">Privacy Statement</a> -
+				
+				<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</table>
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script><!-- D_T_O 3-4-9 -->
+<table cellpadding="3" cellspacing="0" border="0" class="page" align="center" width="100%"><tr><td class="tfoot" align="center" width="100%"><div class="smallfont"><strong><a href="http://www.verticalscope.com/aboutus/tos.php?site=svrider.com">Terms of Use</a></strong></div></td></tr></table>
+
+
+
+<script type="text/javascript" src="http://svrider.us.intellitxt.com/intellitxt/front.asp?ipid=21577"></script> 
+<!-- Adblock Check -->
+<div class="afs_ads">&nbsp;</div>
+<script>
+(function() {
+    var adBlockDetector = function() {
+        setTimeout(function() {
+            if (!document.getElementsByClassName) return;
+            
+            var ads = document.getElementsByClassName("afs_ads");
+            ad  = ads[ads.length - 1];
+
+            if (!ad || ad.innerHTML.length == 0 || ad.clientHeight === 0) {
+                _gaq.push(["_trackEvent", "Adblock", "Blocked", "true",,true]);
+            } else {
+                ad.style.display = "none";
+                _gaq.push(["_trackEvent", "Adblock", "Unblocked", "false",,true]);
+            }
+
+        }, 500);
+    }
+
+    /* Attach a listener for page load */
+    if (window.addEventListener) {
+        window.addEventListener("load", adBlockDetector, false);
+    } else {
+        window.attachEvent("onload", adBlockDetector); //IE
+    }
+})();
+</script>
+<!-- /Adblock Check-->
+<!-- Lotame -->
+<script src="http://tags.crwdcntrl.net/c/8060/cc_af.js"></script>
+<!-- /Lotame -->
+
+<!-- SWOOP -->
+<script type="text/javascript">
+  (function addSwoopOnce(domain) {
+    var win = window;
+    try {
+      while (!(win.parent == win || !win.parent.document)) {
+        win = win.parent;
+      }
+    } catch (e) {
+      /* noop */
+    }
+    var doc = win.document;
+    if (!doc.getElementById("swoop_sdk")) {
+      var serverbase = doc.location.protocol + "//ardrone.swoop.com/";
+      var s = doc.createElement("script");
+      s.type = "text/javascript";
+      s.src = serverbase + "js/spxw.js";
+      s.id = "swoop_sdk";
+      s.setAttribute("data-domain", domain);
+      s.setAttribute("data-serverbase", serverbase);
+      doc.head.appendChild(s);
+    }
+  })("SW-86972468-PS1166");
+</script>
+<!-- /SWOOP -->
+<script language="javascript" type="text/javascript"> 
+<!-- 
+var _dropTag=function() { 
+var _qS=""; 
+var _rand=Math.random()+""; 
+var _rs=document.location.protocol+"//"; 
+var xp1_qs = 
+{ 
+"_t": "motovsmotoct", 
+"_random": _rand*100000000000 
+} 
+for(var qsKey in xp1_qs){_qS += "&"+qsKey+"="+xp1_qs[qsKey];} 
+document.write("<iframe src=\""+_rs+"m.xp1.ru4.com/meta?_o=15719"+_qS+"\" width=\"0\" height=\"0\" frameborder=\"0\" scrolling=\"no\"><\/iframe>");} 
+_dropTag(); 
+//--> 
+</script>
+<script type="text/javascript">
+var vs_api = vsapi.api();
+var vs_o = vs_api.vbulletinInit(0, [5029530,5029554,5029626,5029706,5029794,5029818]);
+vs_o.addPostElement(document.getElementById("post5029530"), document.getElementById("post_message_5029530"), 5029530, 361546, 17, 100801, 0);vs_o.addPostElement(document.getElementById("post5029554"), document.getElementById("post_message_5029554"), 5029554, 361546, 17, 14237, 1);vs_o.addPostElement(document.getElementById("post5029626"), document.getElementById("post_message_5029626"), 5029626, 361546, 17, 100801, 2);vs_o.addPostElement(document.getElementById("post5029706"), document.getElementById("post_message_5029706"), 5029706, 361546, 17, 14237, 3);vs_o.addPostElement(document.getElementById("post5029794"), document.getElementById("post_message_5029794"), 5029794, 361546, 17, 60009, 4);vs_o.addPostElement(document.getElementById("post5029818"), document.getElementById("post_message_5029818"), 5029818, 361546, 17, 100801, 5);
+</script>
+
+<!-- temp -->
+<div style="display:none">
+	<!-- thread rate -->
+	
+		
+	
+	<!-- / thread rate -->
+</div>
+
+<!-- SlimCut -->
+<div style='width:100%; text-align:center;'></div>
+<!-- /SlimCut -->
+<br /><div style="z-index:3" class="smallfont" align="center"><div align="center" class="smallfont">Garage Plus <a target="dto" href="http://www.drivethruonline.com/">vBulletin Plugins</a> by Drive Thru Online, Inc.</div></div>      <!-- VigLink vBulletin Plugin v2.0.7.0001: http://viglink.com -->
+      <script type="text/javascript">
+        var vglnk = { api_url: '//api.viglink.com/api',
+                      key: '2434384bb46ee27e0ffea44d1453d891' };
+
+        (function(d, t) {
+          var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+                   '//cdn.viglink.com/api') + '/vglnk.js';
+          var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+        }(document, 'script'));
+      </script>
+      <!-- end VigLink -->
+<!-- Taboola Footer -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<!-- /Taboola Footer -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0f2b0d60a0","applicationID":"2341545","transactionName":"YFMEZUdYCBADVRddVlkZM0NcFgAMEEMOG0pfWRFFXUsDAgYYE1xJ","queueTime":0,"applicationTime":112,"atts":"TBQHEw9CGx4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

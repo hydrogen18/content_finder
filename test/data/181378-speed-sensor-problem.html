@@ -1,0 +1,3359 @@
+<!DOCTYPE html><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+<base href="http://www.zxforums.com/forums/" /><!--[if IE]></base><![endif]-->
+	
+<!-- Amazon Tag Top -->
+<script type='text/javascript' src='//c.amazon-adsystem.com/aax2/amzn_ads.js'></script>
+<script type='text/javascript'>
+    try {
+            amznads.getAds('3274');
+        } catch (e) { /*ignore*/ }
+</script>
+<script type='text/javascript'>
+  var amazonRubiconKeys = amznads.getTokens();
+</script>
+<!-- /Amazon Tag Top -->
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="keywords" content="Speed,Sensor,Problem, Speed Sensor Problem, zxforum, Kawasaki forum, zx14, zx-14, ninja 650r, GTR 1400, zx-6r, zx9r, zx10r, zx-11, Kawasaki motorcycle news, Kawasaki message board" />
+<meta name="description" content="I have a 2006 ZX14 stock with the exception of pipes shortened. When the speed sensor is hooked up it will not rev over 3000rpm and the bike shutsdown " />
+
+
+<!-- CSS Stylesheet -->
+<style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.7 CSS
+* Style: 'ZXForums.com (Full - Light)'; Style ID: 25
+*/
+@import url("http://www.zxforums.com/forums/clientscript/vbulletin_css/style-88a8d73e-00025.css");
+</style>
+
+
+<!-- / CSS Stylesheet -->
+
+<!--[if lt IE 9]>
+<style>
+#update-browser{display:block}
+</style>
+<script>
+// HTML 5 Shiv. for older IE - should be an if statement?  /
+(function(){if(!/*@cc_on!@*/0)return;var e="abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})()
+</script>
+<![endif]-->
+
+<script>
+if (typeof(jQuery) == 'undefined'){
+        document.write('<scr' + 'ipt type="text/javascript" src=" http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></scr' + 'ipt>');
+}
+</script>
+<script src="http://www.zxforums.com/forums/clientscript/scripts.js"></script>
+
+
+
+<style>
+/* 
+Sticky Sidebar Styles
+*/
+#main-content_wrapper{
+margin: 0;
+width: calc(100% - 343px);
+}
+#main-content{
+margin-right: 0;
+padding: 8px 10px 20px 0px !important;
+border: none;
+}
+#sidebar, #sidebar .sidebar{
+width: 328px;
+
+}
+#main-content, .sidebar{
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    padding: 8px 0 15px !important;
+}
+#main-content img, #sidebar img{
+max-width: 100%;
+}
+
+#main-content td img {max-width: none;}
+
+@media screen and (max-width: 1024px){
+#main-content_wrapper{
+margin-right: 0 !important;
+width: 100% !important;
+}
+#main-content{
+margin-right: 0;
+}
+#sidebar{
+width: 326px;
+position: fixed !important;
+}
+#sidebar .sidebar{
+width: auto;
+}
+}
+
+
+</style>
+<!--[if lt IE 9]>
+<style>
+#main-content_wrapper{
+margin-right: -343px !important;
+width: 100% !important;
+}
+#main-content{
+margin-right: 328px;
+}
+#sidebar, #sidebar .sidebar{
+width: 328px;
+}
+#sidebar{
+position: static !important;
+}
+</style>
+<![endif]-->
+<script src="http://static.verticalscope.com/images/other/sticky.js"></script>
+
+
+<script>
+var $ = jQuery.noConflict();
+jQuery(document).ready(function($) {
+$("#main-content, .sidebar").addClass('theiaStickySidebar');
+$("#main-content_wrapper, #sidebar").theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 30
+    });
+});
+
+</script>
+
+
+
+<style>
+/* #5 heart icon */
+.vbseo_buttons .vbseo_liked {background-image: url(http://img.verticalscope.com/images/like_update.png) !important;}
+
+/* #7 upgrade Reply Box */
+.controlbar .smilies-table td {display: table-cell;}
+.controlbar iframe, .controlbar textarea {width: calc(100% - 20px) !important;}
+
+/* #11 oversized smilies in preview */
+/* could exist already */
+.vs_preview .postquote img.inlineimg, .vs_preview .postquote img {max-width: 100%; width: auto;}
+
+/* fix indent issue*/
+.user-post .alt1 ul, .user-post .alt1 ol, blockquote {margin-left: 20px; margin-bottom: 10px;}
+
+#main-content .newreply_reviewbit img {max-width: 400px;}
+</style>
+
+<script async type="text/javascript">
+<!--
+var SESSIONURL = "s=fbbc6e47695936af469542a9e358aa20&";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "/forums/images/ZXForums_2015/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+
+
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setCustomVar',3,'styleid','25',3]);
+</script>
+
+
+
+
+<script src='http://www.zxforums.com/forums/clientscript/dnd.js'>Your browser does not support scripts.</script><script src='http://www.zxforums.com/forums/clientscript/vbulletin_attachment.js?v=387'></script>
+
+
+<!-- 
+  nCode Image Resizer
+  (c) nCode
+  http://www.ncode.nl/vbulletinplugins/
+-->
+<script type="text/javascript" src="http://static.verticalscope.com/clientscript/ncode_imageresizer.js?v=1.0.1"></script>
+<style type="text/css">
+<!--
+table.ncode_imageresizer_warning {
+	background: #FFFFE1;
+	color: #000000;
+	border: 1px solid #CCC;
+	cursor: pointer;
+}
+
+table.ncode_imageresizer_warning td {
+	font-size: 10px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+table.ncode_imageresizer_warning td.td1 {
+	padding: 5px;
+}
+
+table.ncode_imageresizer_warning td.td1 {
+	padding: 2px;
+}
+table.ncode_imageresizer_warning2 {
+	color: #ffffff;
+	cursor: pointer;
+	border-collapse: collapse;
+}
+
+table.ncode_imageresizer_warning2 .td1 {
+	background: #000000;
+	white-space:nowrap;
+	padding: 5px;
+}
+
+table.ncode_imageresizer_warning2 a:link {
+	color: #ffffff;
+}
+
+table.ncode_imageresizer_warning2 td {
+	font-size: 10px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+table.ncode_imageresizer_warning2 td.td2 {
+	padding: 0px;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+NcodeImageResizer.MODE = 'enlarge';
+<!-- NcodeImageResizer.MAXWIDTH = 640; -->
+if (screen && screen.width && parseInt(screen.width) < parseInt(640)) {
+    NcodeImageResizer.MAXWIDTH = screen.width;
+} else {
+    NcodeImageResizer.MAXWIDTH = 640;
+}
+NcodeImageResizer.MAXHEIGHT = 0;
+
+NcodeImageResizer.BBURL = 'http://www.zxforums.com/forums';
+
+vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image.';
+vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image.';
+vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+
+var currentPagePath='http%3A%2F%2Fwww.zxforums.com%2Fforums%2Fforums%2Fshowthread.php%3Ft%3D181378';
+vbphrase['vbp_ncode_click_for_moderation'] = 'Report this image';
+
+var reportImageUrl='http://abuse.verticalscope.com/report/index.php?referrer={1}&imageurl={2}';
+//-->
+</script>
+<script type="text/javascript" src="http://www.zxforums.com/forums/clientscript/ame.js" ></script><script type="text/javascript">
+<!--
+function vba_attach_win(threadid)
+{
+	openWindow('http://www.zxforums.com/forums/misc.php?s=fbbc6e47695936af469542a9e358aa20&amp;do=showattachments&t=' + threadid, 480, 300);
+}
+-->
+</script> 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30657-92']);
+  _gaq.push(['_setDomainName', '.zxforums.com']);
+  _gaq.push(['_setCustomVar',1,'grp','guest', 2]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6036030", c4: "zxforums.com" });
+(function() {
+var s = document.createElement("script"), el =
+document.getElementsByTagName("script")[0]; s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" :
+"http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})(); </script>
+<noscript> <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036030&c4=zxforums.com&cv=2.0&cj=1" alt="" /> </noscript>
+
+
+
+
+<script type="text/javascript">
+netseer_tag_id="27078"; 
+netseer_publisher_label="zxforums.com";
+</script>
+<script async src="//ps.ns-cdn.com/dsatserving2/scripts/ns_vmtag.js" type="text/javascript"></script>
+
+<!-- Video Player -->
+<script type="text/javascript" src="/videoplayer/jwplayer.js?v=1407419911"></script>
+<script type="text/javascript" src="/videoplayer/playerscripts.min.js.php?v=1407430297"></script>
+<!-- /Video Player -->
+
+        <!-- App Indexing for Google Search -->
+        <link href="android-app://com.quoord.tapatalkpro.activity/tapatalk/www.zxforums.com/forums?location=topic&amp;fid=14&amp;tid=181378&amp;channel=google-indexing" rel="alternate" />
+        <link href="ios-app://307880732/tapatalk/www.zxforums.com/forums?location=topic&amp;fid=14&amp;tid=181378&amp;channel=google-indexing" rel="alternate" />
+        
+        <meta property="al:android:package" content="com.quoord.tapatalkpro.activity" />
+        <meta property="al:android:url" content="tapatalk://www.zxforums.com/forums?location=topic&amp;fid=14&amp;tid=181378&amp;channel=facebook-indexing" />
+        <meta property="al:android:app_name" content="Tapatalk" />
+        <meta property="al:ios:url" content="tapatalk://www.zxforums.com/forums?location=topic&amp;fid=14&amp;tid=181378&amp;channel=facebook-indexing" />
+        <meta property="al:ios:app_store_id" content="307880732" />
+        <meta property="al:ios:app_name" content="Tapatalk" />
+        
+        <!-- twitter app card start-->
+        <!-- https://dev.twitter.com/docs/cards/types/app-card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@tapatalk" />
+        <meta name="twitter:title" content="Speed Sensor Problem" />
+        <meta name="twitter:description" content="ZX Forums" />
+        
+        <meta name="twitter:app:id:iphone" content="307880732" />
+        <meta name="twitter:app:url:iphone" content="tapatalk://www.zxforums.com/forums?location=topic&amp;fid=14&amp;tid=181378&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:ipad" content="307880732" />
+        <meta name="twitter:app:url:ipad" content="tapatalk://www.zxforums.com/forums?location=topic&amp;fid=14&amp;tid=181378&amp;channel=twitter-indexing" />
+        <meta name="twitter:app:id:googleplay" content="com.quoord.tapatalkpro.activity" />
+        <meta name="twitter:app:url:googleplay" content="tapatalk://www.zxforums.com/forums?location=topic&amp;fid=14&amp;tid=181378&amp;channel=twitter-indexing" />
+        <!-- twitter app card -->
+        <!-- Editor CSS automatically added by functions_editor.php at line 680 -->
+<script type="text/javascript" src="//d1r55yzuc1b1bw.cloudfront.net/vsapi.all.min.js"></script>
+	<title> Speed Sensor Problem - ZX Forums</title>
+
+
+<!-- Taboola Header -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:"auto"});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement("script"),
+  document.getElementsByTagName("script")[0],
+  '//cdn.taboola.com/libtrc/verticalscope-network/loader.js');
+</script>
+<!-- /Taboola Header -->
+<link rel="stylesheet" type="text/css" href="vbseo/resources/css/vbseo_buttons.css?v=a4" />
+<script type="text/javascript" src="vbseo/resources/scripts/vbseo_ui.js?v=a4"></script>
+
+<script type="text/javascript">
+ YAHOO.util.Event.onDOMReady(function (){
+ 	vbseoui = new vBSEO_UI();
+ 	vbseoui.page_init(Array('postbody','blogbit','content','postcontainer','vbseo_like_postbit'), Array("php",1));
+ });
+</script>
+
+</head>
+<body onload="">
+
+<script>
+var captify_kw_query_11825 = "";
+(function(c,a,p,t,i,f,y){i=c.createElement(a);t=c.getElementsByTagName(a)[0];i.type="text/javascript";i.async=true;i.src=p;t.parentNode.insertBefore(i,t);})(document,"script","https://p.cpx.to/p/11825/px.js");
+</script>
+
+
+
+
+<script>
+var captify_kw_query_11825 = "";
+(function(c,a,p,t,i,f,y){i=c.createElement(a);t=c.getElementsByTagName(a)[0];i.type="text/javascript";i.async=true;i.src=p;t.parentNode.insertBefore(i,t);})(document,"script","https://p.cpx.to/p/11825/px.js");
+</script>
+
+
+
+
+
+
+
+
+<!-- Tapatalk Detect body start -->
+<script type="text/javascript">if (typeof(tapatalkDetect) == "function") tapatalkDetect()</script>
+<!-- Tapatalk Detect banner body end -->
+
+
+<div class="container">
+
+<!-- logo -->
+<a name="top"></a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" id="header" class="header" style="background: url(/forums/images/ZXForums_2015/misc/head-middle.jpg) repeat-x;"><tr><td align="left"><a href="http://www.zxforums.com/forums/"><img src="/forums/images/ZXForums_2015/misc/head-left.png" border="0" height="146" width="1006" alt="ZX Forums" /></a></td><td align="right" id="header_right_cell"><!--<img src="/forums/images/ZXForums_2015/misc/head-right.jpg" border="0" height="130" width="377" alt="" />--></td>
+</tr></table>
+<!-- /logo -->
+
+<!-- content table -->
+<!-- open content container -->
+
+<div align="center" itemscope itemtype="http://schema.org/WebPage">
+	<div id="page" class="page page-background" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+
+
+
+
+<!-- nav buttons bar -->
+<nav>
+<div class="search-in-one">
+    <div class="change_btn "><div class="image sprite-google-search"></div>
+        <ul class="search_menu">
+
+            <li data-search-type="vb-search"><div class="icon sprite-vb-search"></div> VB search</li>
+        </ul>
+    </div>
+
+    
+
+
+    
+</div>
+
+
+
+<ul class="vbmenu_control navbar_search">
+<li><a id="navbar_search" href="http://www.zxforums.com/forums/search.php" accesskey="4" rel="nofollow">Search</a> <script type="text/javascript"> vbmenu_register("navbar_search"); </script>
+</li></ul>
+
+
+<ul class="nav" id="nav">
+    
+    <li class="vbmenu_control"><a href="http://www.zxforums.com/">Home</a></li>
+    
+    			
+
+	<li class="vbmenu_control hovertouch">
+		<a href="/forums/" id="navforums">Forums <img src="/forums/images/misc/menu_open.gif" border="0" width="8" height="4" title="" alt=""></a>
+		<div class="vbmenu_popup tools_wrapper forum-menu_wrapper" id="forum-menu">
+			<ul class="subnav" >
+							
+<li class="vbmenu_control hovertouch">
+	<a href="http://www.zxforums.com/forums/diy-forum/">DIY Forum</a>
+	
+		<div class="vbmenu_popup" style="display:none;" align="left">
+			<ul class="subnav">
+				
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/engine-clutches-transmissons/">Engine Clutches and Transmissons</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/exhaust-systems/">Exhaust Systems</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/frame-suspension-brakes-tires/">Frame, Suspension, Brakes, and Tires</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/fuel-delivery-systems/">Fuel Delivery Systems</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/electrical-systems/">Electrical Systems</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/detailing/">Detailing</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/custom-accessories-levers-controls/">Custom Accessories, Levers, and Controls</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/body-work-fairings-windshields-seats/">Body Work, Fairings, Windshields, and Seats</a>
+</li>		
+		
+			</ul>
+		</div>
+	
+</li>
+			
+					
+<li class="vbmenu_control hovertouch">
+	<a href="http://www.zxforums.com/forums/zx-forums/">ZX Forums</a>
+	
+		<div class="vbmenu_popup" style="display:none;" align="left">
+			<ul class="subnav">
+				
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/announcements-events/">Announcements &amp; Events</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zxforums-site-feedback-suggestions-help/">ZXforums Site Feedback, Suggestions and Help</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/general-discussion/">General Discussion</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/mechanical-technical/">Mechanical &amp; Technical</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/oil-lubrication/">Oil and Lubrication</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/tires-tires-tires/">Tires  Tires Tires!</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-forums-ride-month/">ZX Forums Ride of the Month</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-forums-vip-lounge/">ZX Forums VIP lounge</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-forums-news/">ZX Forums News</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/new-member-introductions/">New Member Introductions</a>
+</li>		
+		
+			</ul>
+		</div>
+	
+</li>
+			
+					
+<li class="vbmenu_control ">
+	<a href="http://www.zxforums.com/forums/gear-safety-equipment/">Gear and Safety Equipment</a>
+	
+</li>
+			
+					
+<li class="vbmenu_control hovertouch">
+	<a href="http://www.zxforums.com/forums/kawasaki-motorcycles/">Kawasaki Motorcycles</a>
+	
+		<div class="vbmenu_popup" style="display:none;" align="left">
+			<ul class="subnav">
+				
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/turbo329s-h2r-forum/">Turbo329's H2R Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-14-forum/">ZX-14 Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-12r-forum/">ZX-12R Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-11-forum/">ZX-11 Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-10r-forum/">ZX-10R Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-9r-forum/">ZX-9R Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-7r-forum/">ZX-7R Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/zx-6r-forum/">ZX-6R Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/ninja-z-1000/">Ninja/Z 1000</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/ninja-250r-500r/">Ninja 250R/500R</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/gtr-1400-forum/">GTR 1400 Forum</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.kawasakininja300.com">Kawasaki Ninja 300 Forum</a>
+</li>		
+		
+			</ul>
+		</div>
+	
+</li>
+			
+					
+<li class="vbmenu_control hovertouch">
+	<a href="http://www.zxforums.com/forums/multimedia/">Multimedia</a>
+	
+		<div class="vbmenu_popup" style="display:none;" align="left">
+			<ul class="subnav">
+				
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/pictures/">Pictures</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/videos/">Videos</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/members-rides/">Member's Rides</a>
+</li>		
+		
+			</ul>
+		</div>
+	
+</li>
+			
+					
+<li class="vbmenu_control hovertouch">
+	<a href="http://www.zxforums.com/forums/enthusiast-forums/">Enthusiast Forums</a>
+	
+		<div class="vbmenu_popup" style="display:none;" align="left">
+			<ul class="subnav">
+				
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/track-day/">Track Day</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/road-racing/">Road Racing</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/show/">Show</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/stunt-riding/">Stunt Riding</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/drag-racing/">Drag Racing</a>
+</li>		
+		
+			</ul>
+		</div>
+	
+</li>
+			
+					
+<li class="vbmenu_control hovertouch">
+	<a href="http://www.zxforums.com/forums/classifieds/">Classifieds</a>
+	
+		<div class="vbmenu_popup" style="display:none;" align="left">
+			<ul class="subnav">
+				
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/internet-purchases/">Internet purchases</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/pay-forward/">Pay It Forward</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/oem-parts-sale/">OEM parts for sale</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/motorcycles-sale/">Motorcycles for sale</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/gear/">Gear</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/aftermarket-parts-accessories/">Aftermarket parts/Accessories</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/want-buy-barter/">Want to buy/barter</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/anything-non-motorcycle-related/">Anything non-motorcycle related</a>
+</li>		
+		
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/ebay-auction-links-section/">eBay Auction Links Section</a>
+</li>		
+		
+			</ul>
+		</div>
+	
+</li>
+			
+					
+<li class="vbmenu_control ">
+	<a href="http://www.zxforums.com/forums/platinum-vendor-area/">Platinum Vendor Area</a>
+	
+</li>
+			
+					
+<li class="vbmenu_control hovertouch">
+	<a href="http://www.zxforums.com/forums/site-sponsors/">Site Sponsors</a>
+	
+		<div class="vbmenu_popup" style="display:none;" align="left">
+			<ul class="subnav">
+				
+			
+<li class="vbmenu_control">
+	<a href="http://www.zxforums.com/forums/supporting-vendor-archives/">Supporting Vendor Archives</a>
+</li>		
+		
+			</ul>
+		</div>
+	
+</li>
+			
+		
+			</ul>
+		</div>
+	</li>
+
+			
+		
+    <if>
+    
+    <li class="vbmenu_control"><a rel="nofollow" href="http://www.zxforums.com/index.php?page=active_topics">Active Topics</a></li>
+    
+    
+    <li class="vbmenu_control"><a href="http://www.zxforums.com/forums/search.php?do=getdaily" accesskey="2">Today's Posts</a></li>
+    
+    
+    <li class="vbmenu_control"><a href="http://www.zxforums.com/forums/all_albums.php">Gallery</a></li>
+    
+    
+<li class="vbmenu_control" id="tmp_garage"><a id="navbar_garage" href="http://www.zxforums.com/forums/garage.php" rel="nofollow">Garage</a>
+		
+		
+</li>
+		
+
+    
+</li>
+
+
+
+		
+		
+        <li class="mobile-hide"><a rel="nofollow" href="http://www.zxforums.com/index.php?page=kawasaki-zx-motorcycle-insurance" target="_top">Insurance</a><li>
+        
+        
+    <li class="vbmenu_control vs_register"><a href="http://www.zxforums.com/forums/register.php" rel="nofollow">Register</a></li>
+    
+
+</ul>
+</nav>
+<!-- / nav buttons bar -->
+
+<!-- breadcrumb, login, pm info -->
+<div class="text_wrapper info-bar">
+<span class="login-or-links">
+
+
+
+		<!-- login form -->
+		<form action="http://www.zxforums.com/forums/login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+
+
+<a rel="nofollow" href="http://www.zxforums.com/forums/register.php?do=social&amp;provider=facebook&amp;reg=1" class="social_btn facebook_btn gradient"><span class="sprite inlineimg facebook_sprite">Facebook</span></a>
+
+
+
+
+		
+<input type="text" class="bginput"  name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" />
+
+<input type="password" class="bginput"  name="vb_login_password" id="navbar_password" size="10" tabindex="102" /  value="Password" onfocus="if (this.value == 'Password') this.value = '';">
+
+
+<input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" />
+
+<label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" /><span class="mobile-hide">Remember Me?</span></label>
+
+
+		<input type="hidden" name="s" value="fbbc6e47695936af469542a9e358aa20" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" name="do" value="login" />
+		<input type="hidden" name="vb_login_md5password" />
+		<input type="hidden" name="vb_login_md5password_utf" />
+		</form>
+		<!-- / login form -->
+     
+
+       
+</span> 
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Leaderboard LeaderboardHeight">
+<div style='width:100%; text-align:center;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-2';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[ZxForums.com]';
+var rp_inventory = { vsdomain:'ZxForums.com', amznbucket: amazonRubiconKeys };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div>
+</div>
+
+
+
+
+
+
+<div class="text_wrapper navbar_wrapper">
+<div class="breadcrumb" itemprop="breadcrumb">		
+
+			
+			<span class="navbar"><a href="http://www.zxforums.com/forums/" accesskey="1">ZX Forums</a></span> 
+	<span class="navbar">&gt; <a href="http://www.zxforums.com/forums/kawasaki-motorcycles/">Kawasaki Motorcycles</a></span>
+
+
+	<span class="navbar">&gt; <a href="http://www.zxforums.com/forums/zx-14-forum/">ZX-14 Forum</a></span>
+
+
+                ><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html"></a> <strong>
+	 Speed Sensor Problem
+
+</strong>
+		
+</div>
+</div>
+<!-- / breadcrumb, login, pm info -->
+
+
+
+
+
+<div id="wrapper" class="wrapper">
+<div id="main-content_wrapper" class="center">    
+<div id="main-content">
+
+
+
+<div class="showthreadPage">
+
+
+
+
+
+<a name="poststop" id="poststop"></a> 
+
+
+<!-- controls above postbits -->
+<div class="controls" id="fixed-controls">
+<div class="fixed-controls-container">
+
+		<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;noquote=1&amp;p=3808993" rel="nofollow"><span class="sprite button reply">Reply</span></a>
+	
+<span class="item pagenav">
+	
+</span>
+
+<span class="item item-social">
+			
+<div class="socialIcons threadPage">
+	<div class="gplus"><g:plusone size="medium"></g:plusone></div>
+	<arel="nofollow" 
+		href="http://twitter.com/share"
+		class="twitter-share-button"
+		data-count="horizontal"
+		
+	>Tweet</a>
+	<fb:like href="" send="false" layout="button_count" width="70" show_faces="false" action="like" font=""></fb:like>
+</div>
+<div style="clear:both;"></div>
+			
+		</span>
+
+</div>
+</div>
+<!-- / controls above postbits -->
+<div id="placeholder"></div>
+
+ 
+
+<!-- toolbar -->
+<table class="tborder toolbar " cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" >
+		<div class="smallfont">
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control tcat" id="linkbacktools" nowrap="nowrap">
+	<a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#links">LinkBack</a>
+	
+</td>
+<td class="tcat" id="threadtools" >
+		<a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#goto_threadtools">Thread Tools</a>
+		
+	</td>
+	
+	
+	
+ 
+
+	
+
+</tr>
+</table>
+<!-- / toolbar -->
+
+
+
+<!-- end content table -->
+
+<!-- / end content table -->
+
+
+
+
+
+<div id="posts" itemscope itemtype="http://schema.org/Blog"><!-- post #3802522 -->
+
+	
+	<div id="edit3802522" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<section id="post3802522" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment">
+
+
+<div class="text_wrapper postbit_legacy_wrapper_thead thead" >
+	
+    
+    <span class="post-count"><a href="http://www.zxforums.com/forums/3802522-post1.html" target="new"  id="postcount3802522" name="1"><strong>post #1</strong> of 5</a> (<b><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#post3802522" title="Link to this Post">permalink</a></b>)
+			
+ </span>
+			<!-- status icon and date -->
+			<a name="post3802522"><span class="sprite inlineimg post_old">Old</span></a>
+			<span itemprop="dateCreated">09-05-2016, 02:23 PM</span>
+			
+			<!-- / status icon and date -->
+
+			
+			
+
+	
+ <span class="thread-starter">Thread Starter</span>   
+</div>
+
+<div class="text_wrapper postbit_legacy_wrapper">
+<div class="alt2 picture main-column-picture">
+
+			<div id="postmenu_3802522" itemprop="contributor">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.zxforums.com/forums/119146-amped88.html"><!-- google_ad_section_start(weight=ignore) -->Amped88<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+			<div class="smallfont">Newbie</div>
+			
+			
+
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Joined: Sep 2016</div>
+				
+<br />
+				
+				<div>
+					Posts: 7
+				</div>
+				
+
+				
+				
+				
+				<div>    </div>
+			</div>
+
+</div>
+
+	
+    <div id="td_post_3802522" class="main-column-text-wrapper alt1">
+	<div class="main-column-text">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				 <strong itemprop="alternativeHeadline"><!-- google_ad_section_start -->Speed Sensor Problem<!-- google_ad_section_end --></strong>
+			</div>
+			<hr class="dividing-line" />
+
+
+			<!-- / icon and title -->
+		
+
+		<!-- message -->
+		<div id="post_message_3802522" itemprop="text">
+			
+			<!-- google_ad_section_start -->I have a 2006 ZX14 stock with the exception of pipes shortened. When the speed sensor is hooked up it will not rev over 3000rpm and the bike shutsdown like you hit the kill switch. When you disconnect the speed sensor it works perfect. Anybody ever have this problem? Any help would be appreciated. It took me over a month and $500 to figure out that the bike works with the speed sensor disconnected I also replaced the speed sensor with no luck.<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		<div class="text_wrapper vbseo_buttons" id="lkbtn_1.181378.3802522">
+
+    <div class="alt2 vbseo_liked" style="display:none"></div>
+
+
+</div>
+
+		
+
+		
+
+		
+
+		
+
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+
+    
+<div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom">
+<div class="alt2 picture main-column-picture status-icons" >  
+		<span class="sprite inlineimg user_offline" title="Amped88 is offline">Amped88 is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div>
+	
+<div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings">
+<div class="main-column-text">  
+	
+		<div class="right"><!-- controls -->
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3802522" rel="nofollow"><span class="sprite button quote">Quote</span></a>
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3802522" rel="nofollow" id="qr_3802522" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+        </div>
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+</section>
+
+
+ 
+<!-- post 3802522 popup menu -->
+
+<!-- / post 3802522 popup menu -->
+
+
+
+
+
+
+
+	</div>
+	
+
+<!-- / post #3802522 -->
+<div id="edit_vp1" class="vs_dfp_standard_postbit_container" style="padding:0px 0px 0px 0px; ">
+<table class="tborder vs_dfp_standard_postbit_ad" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td class="thead" style="line-height:1.4em;" colspan="2">
+            <div>
+                <span style="float:right;font-weight:normal">
+                    <a href="http://www.zxforums.com/forums/register.php">Remove Advertisements</a>
+                </span>
+            </div>Sponsored Links
+		</td>
+    </tr>
+	<tr valign="top">
+        <td class="alt2" width="175px">
+            <div>
+                <a class="bigusername" href="http://www.zxforums.com/forums">ZX Forums</a>
+            </div>
+            <div class="smallfont">Advertisement</div>
+            <div>&nbsp;<br /></div>
+        </td>
+        <td class="alt1" >
+            <table cellpadding="2" cellspacing="2" border="0" width="100%" align="left">
+                <tr>
+                    <td align="left"><div style='width:100%; text-align:left;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-15';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[ZxForums.com]';
+var rp_inventory = { vsdomain:'ZxForums.com', amznbucket: amazonRubiconKeys };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div></td>
+                    <td></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table></div><!-- post #3802914 -->
+
+	
+	<div id="edit3802914" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<section id="post3802914" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment">
+
+
+<div class="text_wrapper postbit_legacy_wrapper_thead thead" >
+	
+    
+    <span class="post-count"><a href="http://www.zxforums.com/forums/3802914-post2.html" target="new"  id="postcount3802914" name="2"><strong>post #2</strong> of 5</a> (<b><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#post3802914" title="Link to this Post">permalink</a></b>)
+			
+ </span>
+			<!-- status icon and date -->
+			<a name="post3802914"><span class="sprite inlineimg post_old">Old</span></a>
+			<span itemprop="dateCreated">09-06-2016, 05:58 PM</span>
+			
+			<!-- / status icon and date -->
+
+			
+			
+
+	
+    
+</div>
+
+<div class="text_wrapper postbit_legacy_wrapper">
+<div class="alt2 picture main-column-picture">
+
+			<div id="postmenu_3802914" itemprop="contributor">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.zxforums.com/forums/96465-dunner.html"><!-- google_ad_section_start(weight=ignore) -->Dunner<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+			<div class="smallfont">Senior Member</div>
+			
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a rel="nofollow" href="http://www.zxforums.com/forums/96465-dunner.html"><img class="photo avatar" src="/forums/images/ZXForums_2015/misc/spacer.gif" data-original="image.php?s=fbbc6e47695936af469542a9e358aa20&amp;u=96465&amp;dateline=1464650001" width="96" height="96" alt="Dunner's Avatar" border="0" /></a>
+				</div>
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Joined: May 2015</div>
+				<div>From: Oshawa, ON, Canada</div>
+<div><b>I Ride:</b> 96' Yamaha YZF-600R, 00' Honda VTR1000F, 15' Kawasaki ZX-14R SE</div><br />
+				
+				<div>
+					Posts: 194
+				</div>
+				
+
+				
+				
+				
+  <div id="dto_garage_3802914">
+
+
+    <a href="http://www.zxforums.com/forums/garage.php">
+
+
+Garage
+
+</a>
+
+	<script type="text/javascript"> vbmenu_register("dto_garage_3802914", true);</script>
+
+
+  </div>
+
+
+  <div class="vbmenu_popup dto_garage_popup" id="dto_garage_3802914_menu" style="display:none;">
+
+
+    <table cellpadding="4" cellspacing="1" border="0">
+      <tr>
+        <td class="thead">Dunner's Garage</td>
+      </tr>
+        <tr>
+  <td class="vbmenu_option">
+
+  
+      <a rel="nofollow" href="http://www.zxforums.com/forums/garage.php?do=viewvehicle&amp;vehicle_id=1258">      
+  
+  
+    
+    <img border="0" alt="2015 Kawasaki ZX-14R" class="photo vs_garage_thumb_popup" src="http://www.zxforums.com/forums/images/dto_garage/users/96465/2897t_1.jpg" width="100" height="100" align="middle" />
+  
+  Angry Beast</a>
+  </td>
+</tr><tr>
+  <td class="vbmenu_option">
+
+  
+      <a rel="nofollow" href="http://www.zxforums.com/forums/garage.php?do=viewvehicle&amp;vehicle_id=2361">      
+  
+  
+    
+    <img border="0" alt="1996 Yamaha YZF-600R" class="photo vs_garage_thumb_popup" src="http://www.zxforums.com/forums/images/dto_garage/users/96465/2889t_1.jpg" width="100" height="100" align="middle" />
+  
+  First Street Ride</a>
+  </td>
+</tr><tr>
+  <td class="vbmenu_option">
+
+  
+      <a rel="nofollow" href="http://www.zxforums.com/forums/garage.php?do=viewvehicle&amp;vehicle_id=2369">      
+  
+  
+    
+    <img border="0" alt="2000 Honda VTR1000F" class="photo vs_garage_thumb_popup" src="http://www.zxforums.com/forums/images/dto_garage/users/96465/2905t_1.jpg" width="100" height="100" align="middle" />
+  
+  Vibrating Banana</a>
+  </td>
+</tr>
+      </table>
+  </div>
+				<div>    </div>
+			</div>
+
+</div>
+
+	
+    <div id="td_post_3802914" class="main-column-text-wrapper alt1">
+	<div class="main-column-text">
+	
+		
+		
+
+		<!-- message -->
+		<div id="post_message_3802914" itemprop="text">
+			
+			<!-- google_ad_section_start -->Sure hope one of the guys can help you out.<br />
+<br />
+I can hardly ride mine never mind fix it :-)<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		<div class="text_wrapper vbseo_buttons" id="lkbtn_1.181378.3802914">
+
+    <div class="alt2 vbseo_liked" style="display:none"></div>
+
+
+</div>
+
+		
+
+		
+
+		
+
+		
+
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+
+    
+<div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom">
+<div class="alt2 picture main-column-picture status-icons" >  
+		<span class="sprite inlineimg user_offline" title="Dunner is offline">Dunner is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div>
+	
+<div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings">
+<div class="main-column-text">  
+	
+		<div class="right"><!-- controls -->
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3802914" rel="nofollow"><span class="sprite button quote">Quote</span></a>
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3802914" rel="nofollow" id="qr_3802914" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+        </div>
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+</section>
+
+
+ 
+<!-- post 3802914 popup menu -->
+
+<!-- / post 3802914 popup menu -->
+
+
+
+
+
+
+
+	</div>
+	
+
+<!-- / post #3802914 --><!-- post #3803658 -->
+
+	
+	<div id="edit3803658" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<section id="post3803658" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment">
+
+
+<div class="text_wrapper postbit_legacy_wrapper_thead thead" >
+	
+    
+    <span class="post-count"><a href="http://www.zxforums.com/forums/3803658-post3.html" target="new"  id="postcount3803658" name="3"><strong>post #3</strong> of 5</a> (<b><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#post3803658" title="Link to this Post">permalink</a></b>)
+			
+ </span>
+			<!-- status icon and date -->
+			<a name="post3803658"><span class="sprite inlineimg post_old">Old</span></a>
+			<span itemprop="dateCreated">09-08-2016, 02:30 PM</span>
+			
+			<!-- / status icon and date -->
+
+			
+			
+
+	
+ <span class="thread-starter">Thread Starter</span>   
+</div>
+
+<div class="text_wrapper postbit_legacy_wrapper">
+<div class="alt2 picture main-column-picture">
+
+			<div id="postmenu_3803658" itemprop="contributor">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.zxforums.com/forums/119146-amped88.html"><!-- google_ad_section_start(weight=ignore) -->Amped88<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+			<div class="smallfont">Newbie</div>
+			
+			
+
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Joined: Sep 2016</div>
+				
+<br />
+				
+				<div>
+					Posts: 7
+				</div>
+				
+
+				
+				
+				
+				<div>    </div>
+			</div>
+
+</div>
+
+	
+    <div id="td_post_3803658" class="main-column-text-wrapper alt1">
+	<div class="main-column-text">
+	
+		
+		
+
+		<!-- message -->
+		<div id="post_message_3803658" itemprop="text">
+			
+			<!-- google_ad_section_start --><div style="margin:20px; margin-top:5px; ">
+
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+
+	
+
+			
+
+				<div>
+
+					Originally Posted by <strong>Dunner</strong>
+
+					
+<a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#post3802914" rel="nofollow"><span class="sprite inlineimg sviewpost">View Post</span></a>
+
+				</div>
+
+				<div style="font-style:italic; border:1px inset; padding: 5px;" class="postquote">Sure hope one of the guys can help you out.<br />
+<br />
+I can hardly ride mine never mind fix it :-)</div>
+
+			
+
+		
+
+</div>Hope so too! Thanks!<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		<div class="text_wrapper vbseo_buttons" id="lkbtn_1.181378.3803658">
+
+    <div class="alt2 vbseo_liked" style="display:none"></div>
+
+
+</div>
+
+		
+
+		
+
+		
+
+		
+
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+
+    
+<div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom">
+<div class="alt2 picture main-column-picture status-icons" >  
+		<span class="sprite inlineimg user_offline" title="Amped88 is offline">Amped88 is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div>
+	
+<div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings">
+<div class="main-column-text">  
+	
+		<div class="right"><!-- controls -->
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3803658" rel="nofollow"><span class="sprite button quote">Quote</span></a>
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3803658" rel="nofollow" id="qr_3803658" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+        </div>
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+</section>
+
+
+ 
+<!-- post 3803658 popup menu -->
+
+<!-- / post 3803658 popup menu -->
+
+
+
+
+
+
+
+	</div>
+	
+
+<!-- / post #3803658 --><!-- post #3805042 -->
+
+	
+	<div id="edit3805042" style="padding:0px 0px 0px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<section id="post3805042" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment">
+
+
+<div class="text_wrapper postbit_legacy_wrapper_thead thead" >
+	
+    
+    <span class="post-count"><a href="http://www.zxforums.com/forums/3805042-post4.html" target="new"  id="postcount3805042" name="4"><strong>post #4</strong> of 5</a> (<b><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#post3805042" title="Link to this Post">permalink</a></b>)
+			
+ </span>
+			<!-- status icon and date -->
+			<a name="post3805042"><span class="sprite inlineimg post_old">Old</span></a>
+			<span itemprop="dateCreated">09-12-2016, 05:50 AM</span>
+			
+			<!-- / status icon and date -->
+
+			
+			
+
+	
+    
+</div>
+
+<div class="text_wrapper postbit_legacy_wrapper">
+<div class="alt2 picture main-column-picture">
+
+			<div id="postmenu_3805042" itemprop="contributor">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.zxforums.com/forums/118914-brrrrraaaaappppp.html"><!-- google_ad_section_start(weight=ignore) -->brrrrraaaaappppp<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+			<div class="smallfont">Newbie</div>
+			
+			
+
+			
+				<div class="smallfont">
+					&nbsp;<br /><a rel="nofollow" href="http://www.zxforums.com/forums/118914-brrrrraaaaappppp.html"><img class="photo avatar" src="/forums/images/ZXForums_2015/misc/spacer.gif" data-original="image.php?s=fbbc6e47695936af469542a9e358aa20&amp;u=118914&amp;dateline=1472605223" width="96" height="54" alt="brrrrraaaaappppp's Avatar" border="0" /></a>
+				</div>
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Joined: Aug 2016</div>
+				
+<br />
+				
+				<div>
+					Posts: 6
+				</div>
+				
+
+				
+				
+				
+				<div>    </div>
+			</div>
+
+</div>
+
+	
+    <div id="td_post_3805042" class="main-column-text-wrapper alt1">
+	<div class="main-column-text">
+	
+		
+		
+
+		<!-- message -->
+		<div id="post_message_3805042" itemprop="text">
+			
+			<!-- google_ad_section_start -->I know a guy that has broken speedo. He simply downloaded a GPS app for his phone and has a phone holder on bike and uses this for speedometer. It is actually much more accurate.<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		<div class="text_wrapper vbseo_buttons" id="lkbtn_1.181378.3805042">
+
+    <div class="alt2 vbseo_liked" style="display:none"></div>
+
+
+</div>
+
+		
+
+		
+
+		
+
+		
+
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+
+    
+<div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom">
+<div class="alt2 picture main-column-picture status-icons" >  
+		<span class="sprite inlineimg user_offline" title="brrrrraaaaappppp is offline">brrrrraaaaappppp is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div>
+	
+<div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings">
+<div class="main-column-text">  
+	
+		<div class="right"><!-- controls -->
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3805042" rel="nofollow"><span class="sprite button quote">Quote</span></a>
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3805042" rel="nofollow" id="qr_3805042" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+        </div>
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+</section>
+
+
+ 
+<!-- post 3805042 popup menu -->
+
+<!-- / post 3805042 popup menu -->
+
+
+
+
+
+
+
+	</div>
+	
+
+<!-- / post #3805042 --><!-- post #3808993 -->
+
+	
+	<div id="edit3808993" style="padding:0px 0px 0px 0px">
+	
+
+
+
+<section id="post3808993" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment">
+
+
+<div class="text_wrapper postbit_legacy_wrapper_thead thead" >
+	
+    
+    <span class="post-count"><a href="http://www.zxforums.com/forums/3808993-post5.html" target="new"  id="postcount3808993" name="5"><strong>post #5</strong> of 5</a> (<b><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#post3808993" title="Link to this Post">permalink</a></b>)
+			
+ </span>
+			<!-- status icon and date -->
+			<a name="post3808993"><span class="sprite inlineimg post_old">Old</span></a>
+			<span itemprop="dateCreated">09-20-2016, 05:01 PM</span>
+			
+			<!-- / status icon and date -->
+
+			
+			
+
+	
+ <span class="thread-starter">Thread Starter</span>   
+</div>
+
+<div class="text_wrapper postbit_legacy_wrapper">
+<div class="alt2 picture main-column-picture">
+
+			<div id="postmenu_3808993" itemprop="contributor">
+				
+				<a rel="nofollow" class="bigusername" href="http://www.zxforums.com/forums/119146-amped88.html"><!-- google_ad_section_start(weight=ignore) -->Amped88<!-- google_ad_section_end --></a>
+				
+				
+			</div>
+
+			<div class="smallfont">Newbie</div>
+			
+			
+
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Joined: Sep 2016</div>
+				
+<br />
+				
+				<div>
+					Posts: 7
+				</div>
+				
+
+				
+				
+				
+				<div>    </div>
+			</div>
+
+</div>
+
+	
+    <div id="td_post_3808993" class="main-column-text-wrapper alt1">
+	<div class="main-column-text">
+	
+		
+		
+
+		<!-- message -->
+		<div id="post_message_3808993" itemprop="text">
+			
+			<!-- google_ad_section_start --><div style="margin:20px; margin-top:5px; ">
+
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+
+	
+
+			
+
+				<div>
+
+					Originally Posted by <strong>brrrrraaaaappppp</strong>
+
+					
+<a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#post3805042" rel="nofollow"><span class="sprite inlineimg sviewpost">View Post</span></a>
+
+				</div>
+
+				<div style="font-style:italic; border:1px inset; padding: 5px;" class="postquote">I know a guy that has broken speedo. He simply downloaded a GPS app for his phone and has a phone holder on bike and uses this for speedometer. It is actually much more accurate.</div>
+
+			
+
+		
+
+</div>I am At that point now. Thanks for your advice.<!-- google_ad_section_end -->
+		</div>
+		<!-- / message -->
+
+		
+
+		<div class="text_wrapper vbseo_buttons" id="lkbtn_1.181378.3808993">
+
+    <div class="alt2 vbseo_liked" style="display:none"></div>
+
+
+</div>
+
+		
+
+		
+
+		
+
+		
+
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+
+    
+<div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom">
+<div class="alt2 picture main-column-picture status-icons" >  
+		<span class="sprite inlineimg user_offline" title="Amped88 is offline">Amped88 is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div>
+	
+<div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings">
+<div class="main-column-text">  
+	
+		<div class="right"><!-- controls -->
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3808993" rel="nofollow"><span class="sprite button quote">Quote</span></a>
+		
+		
+		
+			<a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;p=3808993" rel="nofollow" id="qr_3808993" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+        </div>
+</div>
+</div>
+
+</div>
+<!-- end text_wrapper -->
+</section>
+
+
+ 
+<!-- post 3808993 popup menu -->
+
+<!-- / post 3808993 popup menu -->
+
+
+
+
+
+
+
+	</div>
+	
+
+<!-- / post #3808993 -->
+<div id="edit_vp2" class="vs_dfp_standard_postbit_container" style="padding:0px 0px 0px 0px; ">
+<table class="tborder vs_dfp_standard_postbit_ad" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="margin-bottom:6px;">
+        <tr>
+        <td class="thead" style="line-height:1.4em;" colspan="2">
+            <div>
+                <span style="float:right;font-weight:normal">
+                    <a href="http://www.zxforums.com/forums/register.php">Remove Advertisements</a>
+                </span>
+            </div>Sponsored Links
+        </td>
+    </tr>
+	<tr valign="top">
+        <td class="alt2" width="175px">
+            <div>
+                <a class="bigusername" href="http://www.zxforums.com/forums">ZX Forums</a>
+            </div>
+            <div class="smallfont">Advertisement</div>
+            <div>&nbsp;<br /></div>
+        </td>        <td class="alt1">
+            <div style='width:100%; text-align:left;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-15';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[ZxForums.com]';
+var rp_inventory = { vsdomain:'ZxForums.com' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div>
+        </td>
+    </tr>
+</table></div><div id="lastpost"></div></div>
+
+
+
+<!-- start content table -->
+
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:3px" class="text_wrapper">
+<tr valign="top">
+	
+		<td class="smallfont"><a href="http://www.zxforums.com/forums/newreply.php?do=newreply&amp;noquote=1&amp;p=3808993" rel="nofollow"><span class="sprite button reply">Reply</span></a></td>
+	
+	
+</tr>
+</table>
+<!-- / controls below postbits -->
+
+
+
+
+
+
+
+<!-- Taboola Content -->
+<div id="taboola-below-article-thumbnails-white"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: "thumbnails-c",
+  container: "taboola-below-article-thumbnails-white",
+    placement: "Below Article Thumbnails White - PS",
+    target_type: "mix"
+  });
+</script>
+<!-- /Taboola Content -->
+
+
+
+
+
+
+
+
+<!-- ajax errors table -->
+	<table class="tborder" cellpadding="0" cellspacing="0" border="0" style="display:none; position:absolute" id="ajax_post_errors">
+	<tr>
+		<td class="thead">
+			<span style="float:right"><input type="button" class="button" value=" X " onclick="vB_QuickEditor.hide_errors()" id="ajax_post_errors_closebtn" /></span>
+			ZX Forums Message
+		</td>
+	</tr>
+	<tr>
+		<td class="alt2" colspan="2" id="ajax_post_errors_message">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="tfoot" colspan="2" align="center"><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#" onclick="vB_QuickEditor.abort(); return false;">Cancel Changes</a></td>
+	</tr>
+	</table>
+<!-- / ajax errors table -->
+
+<!-- scripts for quick reply and quick edit -->
+	<!-- Editor Scripts -->
+
+<script type="text/javascript">
+<!--
+var fontoptions = new Array();
+var sizeoptions = new Array();
+var smilieoptions = {  };
+
+var istyles = {  };
+var ltr = 'left';
+
+var smiliewindow_x = 240;
+var smiliewindow_y = 280;
+
+var ignorequotechars = 1;
+var allowbasicbbcode = true;
+
+// vB Phrases
+vbphrase["wysiwyg_please_wait"]          = "Please wait for the WYSIWYG editor to finish loading...";
+vbphrase["wysiwyg_initialized"]          = "WYSIWYG Editor initialized for %1$s in %2$s seconds.";
+vbphrase["wysiwyg_command_invalid"]      = "This command is invalid or not implemented.";
+vbphrase["moz_must_select_text"]         = "Mozilla requires that you must select some text for this function to work";
+vbphrase["moz_edit_config_file"]         = "You need to edit your Mozilla config file to allow this action.";
+vbphrase["enter_tag_option"]             = "Please enter the option for your %1$s tag:";
+vbphrase["must_select_text_to_use"]      = "You must select some text to use this function.";
+vbphrase["browser_is_safari_no_wysiwyg"] = "The Safari browser does not support WYSIWYG mode.";
+vbphrase["enter_option_x_tag"]           = "Enter the option for the [%1$s] tag:";
+vbphrase["enter_text_to_be_formatted"]   = "Enter the text to be formatted";
+vbphrase["enter_link_text"]              = "Enter the text to be displayed for the link (optional):";
+vbphrase["enter_list_type"]              = "What type of list do you want? Enter '1' for a numbered list, enter 'a' for an alphabetical list, or leave blank for a list with bullet points:";
+vbphrase["enter_list_item"]              = "Enter a list item.\r\nLeave the box empty or press 'Cancel' to complete the list:";
+vbphrase["must_enter_subject"]           = "You must enter a title / subject!";
+vbphrase["message_too_short"]            = "The message you have entered is too short. Please lengthen your message to at least %1$s characters.";
+vbphrase["enter_link_url"]               = "Please enter the URL of your link:";
+vbphrase["enter_image_url"]              = "Please enter the URL of your image:";
+vbphrase["enter_email_link"]             = "Please enter the email address for the link:";
+vbphrase["complete_image_verification"]  = "You did not complete the Image Verification";
+vbphrase["iespell_not_installed"]        = "ieSpell is a spell-checking tool for Internet Explorer.\r\n\r\nIf you would like to download ieSpell, click OK; otherwise click Cancel.\r\n\r\nieSpell can be downloaded from http://www.iespell.com";
+vbphrase["click_quick_reply_icon"]       = "Please click one of the Quick Reply icons in the posts above to activate Quick Reply.";
+vbphrase["insert_all"]                   = "Insert All";
+
+//-->
+</script>
+<!-- / Editor Scripts -->
+	
+
+		<script type="text/javascript">
+		<!--
+		vB_AJAX_QuickEdit_Init('posts');
+		//-->
+		</script>
+	
+<!-- / scripts for quick reply and quick edit -->
+
+
+
+
+<!-- quick reply -->
+	<br />
+	<form action="http://www.zxforums.com/forums/newreply.php?do=postreply&amp;t=181378" method="post" onsubmit="return vbpegp_qr_prepare_submit(this, 1);" name="vbform" id="qrform">
+	<table class="tborder" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+	<thead>
+		<tr>
+			<td class="tcat" colspan="2">
+				<a style="float:right" href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#top" onclick="return toggle_collapse('quickreply');"><span class="sprite inlineimg collapseimg" id="collapseimg_quickreply"></span></a>
+				Quick Reply
+			</td>
+		</tr>
+	</thead>
+	<tbody id="qr_error_tbody" style="display:none">
+	<tr>
+		<td class="thead">The following errors occurred with your submission</td>
+	</tr>
+	<tr>
+		<td class="alt1" id="qr_error_td"></td>
+	</tr>
+	<tr>
+		<td class="tfoot" align="center"><span class="smallfont"><a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#" onclick="return qr_hide_errors()">Okay</a></span></td>
+	</tr>
+	</tbody>
+	<tbody id="collapseobj_quickreply">
+	<tr>
+		<td class="panelsurround" align="center">
+			<div class="panel">
+				<div align="left" style="max-width:; width:auto !important; width:">
+					<div class="smallfont vs_msglabel">Message:</div>
+					<div id="vB_Editor_QR" class="vBulletin_editor">
+		<script type="text/javascript">
+		<!--
+			var threaded_mode = 0;
+			var require_click = 0;
+			var is_last_page = 1; // leave for people with cached JS files
+			var allow_ajax_qr = 1;
+			var ajax_last_post = 1474412506;
+		// -->
+		</script>
+		
+<div class="controlbar" style="padding-right:8px">
+	<fieldset style="border:0px; padding:0px; margin:0px">
+	
+	<textarea name="message" id="vB_Editor_QR_textarea" rows="10" cols="60" style="width:100%; height:200px" tabindex="1" dir="ltr"></textarea>
+	
+	</fieldset>
+	<!--width:-->
+</div>
+
+<input type="hidden" name="wysiwyg" id="vB_Editor_QR_mode" value="0" />
+<input type="hidden" name="styleid" value="0" />
+
+<script type="text/javascript">
+<!--
+vB_Editor['vB_Editor_QR'] = new vB_Text_Editor('vB_Editor_QR', 0, '14', '1');
+var QR_EditorID = 'vB_Editor_QR';
+//-->
+</script>
+	</div>
+					
+					
+
+					<fieldset class="fieldset">
+						<legend>Options</legend>
+						<div style="padding:3px">
+							
+							<label for="qr_quickreply"><input type="checkbox" name="quickreply" value="1" id="qr_quickreply" accesskey="w" tabindex="4" />Quote message in reply?</label>
+						</div>
+					</fieldset> <style type="text/css">
+/* ***** red and green boxes for username verification used during registration ***** */
+.greenbox { border: 1px solid #337733; background: #bbffbb; color: #337733; padding: 3px; }
+.redbox { border:1px solid #773333; background: #ffbbbb; color: #773333; padding: 3px; }
+</style>
+<link type="text/css" rel="stylesheet" href="http://www.zxforums.com/forums/vbpegp/resources/css/register.css" />
+<div class="detailsContainer ">
+
+<style>
+table.registration .column_or .block_or {display: none;}
+.container table.registration .column_or .block_or {display: block;}
+</style>
+
+    <table width="100%" cellspacing="0" cellpadding="0"  class="registration">
+<tbody>
+<tr>
+<td width="55%" valign="top" class="" style="vertical-align:top">
+
+<div class="blockrow">
+<h2>
+Register Now
+</h2>
+            <br>
+<br>
+
+</div>
+<div class="smallfont" style="margin-bottom:3px">
+In order to be able to post messages on the ZX Forums forums, you must first register.<br />
+				Please enter your desired user name, your email address and other required details in the form below.<br><br>
+</div>
+<div class="smallfont" style="margin-bottom:3px">
+<strong>User Name</strong>:<br />
+<input class="bginput" id="regusername" type="text" name="username" maxlength="25" value="" /><img src="http://www.zxforums.com/forums/clear.gif" id="reg_verif_image" onclick="return toggle_collapse('dialog_box')" style="display:none;" alt="" />
+<div id="collapseobj_dialog_box"><div id="reg_verif_div" style="display:none;"></div></div>
+<script type="text/javascript" src="http://www.zxforums.com/forums/clientscript/vbulletin_ajax_nameverif.js?v=387"></script>
+<script type="text/javascript">
+<!--
+regname_verif = new vB_AJAX_NameVerify('regname_verif', 'regusername');
+//-->
+</script>
+</div>
+<fieldset class="fieldset">
+<legend>Password</legend>
+<table cellpadding="0" cellspacing="3" border="0" width="400">
+<tr>
+<td >Please enter a password for your user account. Note that passwords are case-sensitive.<Br><br></td>
+</tr>
+<tr>
+<td >
+Password:<br />
+<input type="password" class="bginput" name="password"  maxlength="50" value="" /><br><br>
+</td>
+
+</tr>
+            <tr>
+            <td>
+Confirm Password:<br />
+<input type="password" class="bginput" name="passwordconfirm"  maxlength="50" value="" />
+</td>
+            </tr>
+            
+</table>
+</fieldset>
+
+<fieldset class="fieldset">
+<legend>Email Address</legend>
+<table cellpadding="0" cellspacing="3" border="0" width="400">
+<tr>
+<td colspan="2">Please enter a valid email address for yourself.<br><br></td>
+</tr>
+<tr>
+<td>
+Email Address:<br />
+<input type="text" class="bginput" name="email" size="25" maxlength="50" value="" dir="ltr" />
+</td>
+<td>
+<!--
+Confirm Email Address:<br />
+<input type="text" class="bginput" name="emailconfirm" size="25" maxlength="50" value="" dir="ltr" />
+-->
+</td>
+</tr>
+
+</table>
+</fieldset>
+
+
+</td>
+<td class="column_or"><div class="block_or">OR</div></td>
+<td width="30%" valign="top" class="" style="vertical-align:top">
+
+
+<div class="blockrow">
+<h2>
+Log-in
+</h2><br>
+<br>
+
+</div>
+<table cellpadding="0" cellspacing="3" border="0" width="90%">
+<tr>
+<td class="smallfont" style="white-space: nowrap;"><label for="navbar_username2">User Name</label></td>
+<td align="right"><input type="text" style="font-size: 11px" name="vb_login_username" id="navbar_username2" size="10" accesskey="u" tabindex="1" value="" onfocus="if (this.value == 'User Name') this.value = '';" /></td>
+
+</tr>
+<tr>
+<td class="smallfont"><br>
+<label for="navbar_password2">Password</label><br><br>
+
+</td>
+<td align="right"><br>
+<input type="password" style="font-size: 11px" name="vb_login_password" id="navbar_password2" size="10" tabindex="1" /><br>
+<br>
+</td>
+
+</tr>
+        
+        <tr>
+        <td nowrap class="smallfont"><label for="cb_cookieuser_navbar2">Remember Me? <input type="checkbox" name="cookieuser" value="1" tabindex="1" id="cb_cookieuser_navbar2" accesskey="c" /></label></td>
+        <td align="right"><input type="submit" class="button" value="Log in" tabindex="1" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /></td>
+        </tr>
+</table>
+
+
+        </td>
+      </tr>
+</tbody></table>
+</div>		<script type='text/javascript'>
+		var ACPuzzleOptions = { theme : 'red', tabindex : 0 };
+		</script>	<input id="hash" type="hidden" name="humanverify[hash]" value="" />
+		<fieldset><legend>Human Verification</legend>
+		<p>In order to verify that you are a human and not a spam bot, please enter the answer into the following box below based on the instructions contained in the graphic.</p><br/><script type="text/javascript" src="http://api.solvemedia.com/papi/challenge.script?k=2SxJk12AXUrs02Qhw1Sqh23vlA0MC1kG"></script>
+
+	<noscript>
+  		<iframe src="http://api.solvemedia.com/papi/challenge.noscript?k=2SxJk12AXUrs02Qhw1Sqh23vlA0MC1kG" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="adcopy_challenge" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="adcopy_response" value="manual_challenge"/>
+	</noscript></fieldset>
+				</div>
+			</div>
+
+			<div class="vs_submit">
+				<input type="hidden" name="poststarttime" value="" />
+				<input type="hidden" name="posthash" value="" />
+				<input type="hidden" name="fromquickreply" value="1" />
+				<input type="hidden" name="s" value="fbbc6e47695936af469542a9e358aa20" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="postreply" />
+				<input type="hidden" name="t" value="181378" id="qr_threadid" />
+				<input type="hidden" name="p" value="who cares" id="qr_postid" />
+				<input type="hidden" name="specifiedpost" value="0" id="qr_specifiedpost" />
+				<input type="hidden" name="parseurl" value="1" />
+				<input type="hidden" name="loggedinuser" value="0" />
+				<input type="button" class="button" value="Post Quick Reply" accesskey="s" title="(Alt + S)" name="sbutton" tabindex="2" id="qr_submit" onclick="clickedelm = this.value; " /> 
+				<input type="submit" class="button" value="Go Advanced" accesskey="x" title="(Alt + X)" name="preview" tabindex="3" id="qr_preview" onclick="clickedelm = this.value" />
+
+			<div align="center" id="qr_posting_msg" style="display:none; margin-top:6px">
+				<span class="sprite inlineimg progress">Posting Quick Reply - Please Wait</span>&nbsp;<strong>Posting Quick Reply - Please Wait</strong>
+			</div>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	</form>
+<script>
+(function ($, window) {
+$("#qr_submit").click(function(e){
+e.stopPropagation();
+$("#qrform").trigger('submit');
+});
+})(jQuery, window);
+</script>
+	
+
+	<script type="text/javascript">
+	<!--
+		// initialize quick reply
+		qr_init();
+	//-->
+	</script>
+<!-- / quick reply -->
+
+
+
+<!-- next / previous links -->
+	<br />
+	<div class="smallfont" align="center">
+		<strong>&laquo;</strong>
+			<a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem-prev-thread.html" rel="nofollow">Previous Thread</a>
+			|
+			<a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem-next-thread.html" rel="nofollow">Next Thread</a>
+		<strong></strong>
+	</div>
+<!-- / next / previous links -->
+
+
+
+
+
+
+
+<!-- controls for non-popup browsers -->
+
+
+<table class="tborder" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-top-width:0px">
+<tr>
+	<td class="thead" colspan="2">Thread Tools<a name="goto_threadtools"></a></td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" colspan="2">
+
+	<!-- thread tools -->
+	<div class="smallfont">
+		
+
+			<div><span class="sprite inlineimg printer">Show Printable Version</span> <a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem-print.html" rel="nofollow">Show Printable Version</a></div>
+			<div><span class="sprite inlineimg sendtofriend">Email this Page</span> <a href="http://www.zxforums.com/forums/sendmessage.php?do=sendtofriend&amp;t=181378" rel="nofollow">Email this Page</a></div>
+		
+		
+		
+	</div>
+	<!-- / thread tools -->
+
+	</td>
+	
+</tr>
+
+</table>
+<br />
+
+
+<!-- / controls for non-popup browsers -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+	<td width="100%" valign="top">
+		
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		
+		</table>
+	</td>
+</tr>
+</table>
+<!-- /forum rules and admin links -->
+<br>
+
+<br />
+
+
+
+
+
+<table class="tborder forumrules" cellpadding="0" cellspacing="0" border="0" width="210">
+<thead>
+<tr>
+
+<td class="thead">
+Posting Rules
+</td>
+
+	<td class="thead" align="right">
+		<a style="float:right" href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#top" onclick="return toggle_collapse('forumrules')"><span id="collapseimg_forumrules" class="sprite inlineimg collapseimg"><!-- -->&nbsp;</span></a>
+		
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td colspan="2" class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>You <strong>may</strong> post new threads</div>
+		<div>You <strong>may</strong> post replies</div>
+		<div>You <strong>may not</strong> post attachments</div>
+		<div>You <strong>may not</strong> edit your posts</div>
+		<hr />
+		
+		<div><a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=bbcode" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>On</strong></div>
+		<div>HTML code is <strong>Off</strong></div><div><a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=linkbacks#trackbacks" target="_blank">Trackbacks</a> are <strong>Off</strong></div>
+<div><a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=linkbacks#pingbacks" target="_blank">Pingbacks</a> are <strong>Off</strong></div>
+<div><a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=linkbacks#refbacks" target="_blank">Refbacks</a> are <strong>On</strong></div>
+		<hr />
+		<div><a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=showrules" target="_blank">Forum Rules</a></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+</div><!-- Close class="showthreadPage" -->
+
+
+<!-- temp -->
+<div style="display:none">
+	<!-- thread rate -->
+	
+		
+	
+	<!-- / thread rate -->
+</div>
+<script type="text/javascript" src="http://www.zxforums.com/forums/clientscript/vbulletin_autosave.js"></script>
+<!-- SlimCut -->
+<div style='width:100%; text-align:center;'></div>
+
+<div class="vbmenu_popup" id="linkbacktools_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">LinkBack<a name="goto_linkback"></a></td>
+	</tr>
+
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="http://www.zxforums.com/forums/vbseo/resources/images/forum/linkback_url.gif" alt="LinkBack URL" /> <a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html" onclick="prompt('Use the following URL when referencing this thread from another forum or blog.','http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html');return false;">LinkBack URL</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="http://www.zxforums.com/forums/vbseo/resources/images/forum/linkback_about.gif" alt="About LinkBacks" /> <a rel="nofollow" href="http://www.zxforums.com/forums/misc.php?do=linkbacks">About LinkBacks</a></td>
+	</tr>
+
+	</table>
+</div>
+
+</div>
+</div>
+
+<aside class="noprint" id="sidebar">
+<div style="display: none;" class="sidebar-controls ">
+<span class="sprite inlineimg sidebar-controls-icon"></span>
+<span class="sprite inlineimg br-creditcheck"></span>
+<span class="sprite inlineimg br-warranty"></span>
+<span class="sprite inlineimg br-history"></span>
+<span class="sprite inlineimg br-shipping"></span>
+<span class="sprite inlineimg br-escrow"></span>
+<span class="sprite inlineimg br-tires"></span>
+<span class="sprite inlineimg br-inspections"></span>
+<span class="sprite inlineimg br-insurance"></span>
+</div>
+<div class="sidebar">
+<div class="search-in-one">
+    <div class="change_btn "><div class="image sprite-google-search"></div>
+        <ul class="search_menu">
+            <li data-search-type="google-search"><div class="icon sprite-google-search"></div> Google search</li>
+            <li data-search-type="vb-search"><div class="icon sprite-vb-search"></div> VB search</li>
+        </ul>
+    </div>
+    
+    <div class="search-item google-search">
+    <form action="http://www.zxforums.com/forums/search.php" method="post" name="search"> <input name="s" type="hidden" value="" /> <input name="do" type="hidden" value="process" /> <input name="sortby" type="hidden" value="lastpost" /> <input name="forumchoice" type="hidden" value="0" /><input type="hidden" name="securitytoken" value="guest" />
+							<table style="margin:0px !important; border:none; padding:0px;"><tr><td><input class="bginput" name="query" size="13" type="text" /></td><td><input type="submit" class="button" value="Go"  /></td></tr></table></form>
+    </div> 
+    
+</div><section class="text_wrapper ad box-ad">
+<div style='width:100%; text-align:center;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-15';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[ZxForums.com]';
+var rp_inventory = { vsdomain:'ZxForums.com' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div>
+
+
+</section>
+<!-- existing ad code goes here -->
+<div style='width:100%; text-align:center;'></div>
+<div style='width:100%; text-align:center;'></div>
+
+<section>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="cmps-table" width="100%">
+		<thead>
+			<tr>
+				<td  colspan="0">
+				
+				<h2 class="title">Premium Vendor Showcase</h2></td>
+			</tr>
+		</thead>
+		<tbody id="collapseobj_module_106" style="">
+			
+				<tr>
+<td class="alt2">
+<div style='width:100%; text-align:center;'></div>
+</td>
+</tr>
+			
+		</tbody>
+	</table>
+</section>
+
+
+<section>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="cmps-table" width="100%">
+		<thead>
+			<tr>
+				<td  colspan="0">
+				
+				<h2 class="title">Buyers Guide</h2></td>
+			</tr>
+		</thead>
+		<tbody id="collapseobj_module_21" style="">
+			
+				<tr>
+	<td class="alt2">
+<table cellspacing=0 cellpadding=0 class="buyers-resources">
+<!--<tr><td valign='top'><a href="http://www.zxforums.com/forums/"><span class="sprite inlineimg br-loan"></span></a></td><td><a href="http://www.zxforums.com/forums/">Auto Loans</a> <span>Get Approved Today</span></td></tr>-->
+<!--<tr><td valign='top'><a href="http://www.zxforums.com/forums/"><span class="sprite inlineimg br-creditcheck"></span></a></td><td><a href="http://www.zxforums.com/forums/">Credit Check</a> <span>Get yours now</span></td></tr>-->
+<!--<tr><td valign='top'><a href="http://www.zxforums.com/forums/"><span class="sprite inlineimg br-warranty"></span></a></td><td><a href="http://www.zxforums.com/forums/">Warranty</a> <span>Extended warranty packages</span></td></tr>-->
+<!--<tr><td valign='top'><a href="http://www.zxforums.com/forums/"><span class="sprite inlineimg br-history"></span></a></td><td><a href="http://www.zxforums.com/forums/">Vehicle History</a> <span>Get info on Auto vin check free</span></td></tr>-->
+<tr><td valign='top'><a href="http://www.motorcycle.com/shipping" target="_blank"><span class="sprite inlineimg br-shipping"></span></a></td><td><a href="http://www.motorcycle.com/shipping" target="_blank">Shipping</a> <span>Get a free shipping quote</span></td></tr>
+<!--<tr><td valign='top'><a href="http://www.zxforums.com/forums/"><span class="sprite inlineimg br-escrow"></span></a></td><td><a href="http://www.zxforums.com/forums/">Escrow</a> <span>Transfer your money safely</span></td></tr>-->
+<tr><td valign='top'><a  href="http://www.motorcycle.com/tires" target="_blank"><span class="sprite inlineimg br-tires"></span></a></td><td><a  href="http://www.motorcycle.com/tires" target="_blank">Tires</a> <span>Find the right tires for your ride</span></td></tr>
+<!--<tr><td valign='top'><a href="http://www.zxforums.com/forums/"><span class="sprite inlineimg br-inspections"></span></a></td><td><a href="http://www.zxforums.com/forums/">Inspections</a> <span>Certified car inspections</span></td></tr>-->
+<tr><td valign='top'><a href="http://www.motorcycle.com/buyers-guide/motorcycle-insurance.html" target="_blank"><span class="sprite inlineimg reputation"></span></a></td><td><a href="http://www.motorcycle.com/buyers-guide/motorcycle-insurance.html" target="_blank">Insurance</a> <span>Get a free insurance quote</span></td></tr>
+</table>
+	</td>
+</tr>
+
+			
+		</tbody>
+	</table>
+</section>
+<tr>
+<td class="alt1">
+<div style="margin-left:15px;">
+		<script language='JavaScript1.1'>
+         <!-- 
+         function redirectEnter(form){
+          var eBayURL = 'http://rover.ebay.com/rover/1/711-53200-19255-0/1?type=3&campid=5336328197&toolid=10001&customid=';
+          for (var i=0;i<form.elements.length;i++){
+           var e = form.elements[i];
+           if ((e.name === "p")){
+            eBayURL += "&ext" + "=" + e.value.replace(" ", "+") + "&satitle" + "=" + e.value.replace(" ", "+");
+           }
+          }
+          parent.location = eBayURL;
+         }
+         // -->
+         </script>
+        	<div id="DR-ebay-search-boxCSS">
+                 <form onsubmit="redirectEnter(this); return false;" method="get" id="DR-ebay-searchCSS">
+                 	<input id="p" type="text" name="p" style="width:100px" maxlength="190" >
+					<input type="submit" name="submit" value="Search" /> 				
+                 </form>
+             
+              <script language="JavaScript1.1">
+         <!-- 
+		 (function() { var f = document.getElementById('DR-ebay-searchCSS'); if (!f) { f = document.getElementById('DR-ebay-searchCSS'); } if (f && f.p) { var p = f.p; var n = navigator; var l = location; if (n.platform == 'Win32') { p.style.cssText = 'border: 1px solid #7e9db9; padding: 2px;'; } var b = function() { if (p.value == '') { p.style.background = '#FFFFFF url(http://www.drivingrevenue.com/images/ebay_watermark.gif) left no-repeat'; } }; var f = function() { p.style.background = '#ffffff'; }; p.onfocus = f; p.onblur = b; if (!/[&?]p=[^&]/.test(l.search)) { b(); } } })();
+// -->
+</script>
+               <img style='text-decoration:none; border: 0; padding: 0; margin: 0;' src='http://rover.ebay.com/ar/1/711-53200-19255-0/1?mpt=[CacheBuster]&adtype=1&size=1x1&type=3&campid=5336328197&toolid=10001'>
+</div>
+
+</div>
+</td>
+</tr>
+
+<section>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="cmps-table" width="100%">
+		<thead>
+			<tr>
+				<td  colspan="0">
+				
+				<h2 class="title">Recent Discussions</h2></td>
+			</tr>
+		</thead>
+		<tbody id="collapseobj_module_57" style="">
+			
+				<tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt1 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">13</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/zx-11-forum/183289-random-restart-problem.html" title="One month ago I've cleaned the air filter and changed the gas pump with a brand new mitsubishi, and the &quot;first flight&quot; after all this was perfect, but last weekend during my sunday morning ride, all was fine when I was returning home until I turned off the engine in the gas station..., since then the engine refused to start, the starting motor ran strong but apparently there was no spark and even no gas smell, as if the starting motor was sucking all the current from the sparks plugs and the..." itemprop="headline">Random restart problem</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-12-2016 <span class="time">09:31 AM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/4409-rsr.html" itemprop="contributor">rsr</a>
+                 <meta itemprop="author" content="viktor92">
+                 <meta itemprop="dateCreated" content="11-04-2016 09:35 PM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt2 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">18</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/motorcycles-sale/183305-street-legal-h2r.html" title="If anybody needs one, now's your chance! I'm going to convert another one for something to do this winter and I don't need two! 
+ 
+They did a killer writeup over at Raresportbikes; 
+ 
+http://raresportbikesforsale.com/featured-listing-street-freaking-legal-2015-kawasaki-h2r-for-sale/ 
+ 
+And its on eBay... 
+..." itemprop="headline">Street legal H2R for...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-12-2016 <span class="time">05:17 AM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/12727-jbear.html" itemprop="contributor">JBear</a>
+                 <meta itemprop="author" content="Cliff secord">
+                 <meta itemprop="dateCreated" content="11-05-2016 10:03 AM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt1 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">9</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/zx-14-forum/183497-bike-dyno-brocks.html" title="Hello Guys, 
+ 
+My baby has been dynoed and tuned and full brocks exhaust here are the numbers,my 2014 CBR 1000RR tuned and yoshi exhaust made 158 BHP so i'm real excited to get my Zx14 back and ride it. 
+http://s1079.photobucket.com/user/tchheil1/slideshow/new" itemprop="headline">Bike Dyno and Brocks...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-12-2016 <span class="time">04:26 AM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/70089-bunzx14.html" itemprop="contributor">BUNZX14</a>
+                 <meta itemprop="author" content="Tigereyeguy23">
+                 <meta itemprop="dateCreated" content="11-10-2016 07:09 AM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt2 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">2</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/zx-7r-forum/183433-1990-zx750r-needle-jets.html" title="looking for a set of needle jets from a 1990 zx750r! oem is fine. unfortunately they're unavailable  on any parts sites and not a single needle can be found on ebay.  pictured is how the needles should look (on the right), and how i found one of the needles (on the left). any help would be awesome. or, if anyone knows what other bikes carbs run on this one? id love to run carburetors that arent completely discontinued everywhere. 
+ 
+ 
+thank you! 
+..." itemprop="headline">1990 zx750r needle jets...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-11-2016 <span class="time">08:31 PM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/4409-rsr.html" itemprop="contributor">rsr</a>
+                 <meta itemprop="author" content="jglines603">
+                 <meta itemprop="dateCreated" content="11-09-2016 04:40 PM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt1 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">0</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/want-buy-barter/183569-wtb-1995-zx7-headlight.html" title="WTB: 1995 ZX7 headlight fairing (aka upper cowling)" itemprop="headline">WTB: 1995 ZX7 headlight...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-11-2016 <span class="time">06:34 PM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/106353-joe-coyote.html" itemprop="contributor">Joe Coyote</a>
+                 <meta itemprop="author" content="Joe Coyote">
+                 <meta itemprop="dateCreated" content="11-11-2016 06:34 PM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt2 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">3</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/zx-7r-forum/183561-k-tank-guestion.html" title="Does anyone have a good photo of the bottom of a k tank? I have to paint mine and would like to see how the overspray is supposed to look. Also what has anyone used for the underside padding that is close to oem? 
+Thank you for any help." itemprop="headline">K tank guestion</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-11-2016 <span class="time">04:12 PM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/107954-ttnut.html" itemprop="contributor">TTnut</a>
+                 <meta itemprop="author" content="Honda434">
+                 <meta itemprop="dateCreated" content="11-11-2016 02:28 PM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt1 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">1</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/zx-10r-forum/183537-whats-best-hp.html" title="want to know what the best rwhp you got on dyno with all bolt on parts" itemprop="headline">whats the best hp on...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-11-2016 <span class="time">03:38 PM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/12727-jbear.html" itemprop="contributor">JBear</a>
+                 <meta itemprop="author" content="rleezx10r">
+                 <meta itemprop="dateCreated" content="11-11-2016 10:46 AM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt2 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">3</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/zx-10r-forum/183489-help-gen4-zx10r-engine.html" title="trying to get 205 rwhp anyone have anygood Ideas or mods" itemprop="headline">help gen4 zx10r engine...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-11-2016 <span class="time">03:32 PM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/12727-jbear.html" itemprop="contributor">JBear</a>
+                 <meta itemprop="author" content="rleezx10r">
+                 <meta itemprop="dateCreated" content="11-10-2016 06:46 AM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt1 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">0</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/engine-clutches-transmissons/183553-whats-best-degree-set.html" title="whats best degree to set stock cams on gen4 for the most power" itemprop="headline">whats best degree to set...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-11-2016 <span class="time">10:54 AM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/102402-rleezx10r.html" itemprop="contributor">rleezx10r</a>
+                 <meta itemprop="author" content="rleezx10r">
+                 <meta itemprop="dateCreated" content="11-11-2016 10:54 AM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr><tr itemscope itemtype="http://schema.org/Blog">
+<td class="alt2 columns columns-comments">
+
+	 <div class="picture main-column-picture">    
+
+		
+				<div style="padding-top:0px"><span class="sprite count">0</span></div>
+		
+	
+	</div>
+    
+    	<div class="main-column-text-wrapper">
+   	 <div class="text main-column-text">
+    
+    		<div class="smallfont">
+		
+
+		
+		
+
+		
+			 <a href="http://www.zxforums.com/forums/drag-racing/183545-who-got-th-best-time.html" title="who has the best time in 1/8 on the gen 4 10" itemprop="headline">who got th best time in...</a>
+		
+		
+		
+
+        
+        <div>
+        
+				 <span itemprop="dateModified">11-11-2016 <span class="time">10:51 AM</span></span> by <a rel="nofollow" href="http://www.zxforums.com/forums/102402-rleezx10r.html" itemprop="contributor">rleezx10r</a>
+                 <meta itemprop="author" content="rleezx10r">
+                 <meta itemprop="dateCreated" content="11-11-2016 10:51 AM">
+				
+			
+        </div>
+					
+		</div>
+		
+    </div>
+    </div>  
+    
+</td>
+</tr>
+			
+		</tbody>
+	</table>
+</section>
+<section class="text_wrapper ad box-ad">
+<div style='width:100%; text-align:center;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-15';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[ZxForums.com]';
+var rp_inventory = { vsdomain:'ZxForums.com' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div>
+</section>
+</div>
+</aside>
+
+<div class="clear"><!-- -->&nbsp;</div>
+</div>
+<!-- end wrapper -->
+
+
+<script type="text/javascript">ame_toggle_view({other : 'true',post : 'true',blog : 'true',group : 'true',vm : 'true',sig : 'true'});</script><div class="Leaderboard">
+<div style='width:100%; text-align:center;'><script language='JavaScript' type='text/javascript'>
+var rp_account   = '1019';
+var rp_site      = '25062';
+var rp_zonesize  = '97080-2';
+var rp_adtype    = 'js';
+var rp_smartfile = '[SMART FILE URL]';
+var rp_kw        = '[ZxForums.com]';
+var rp_inventory = { vsdomain:'ZxForums.com' };
+</script>
+<script type='text/javascript' src='http://ads.rubiconproject.com/ad/1019.js'></script></div>
+</div>
+
+
+
+
+
+
+<div id="footer" class="footer">
+<form action="http://www.zxforums.com/forums/" method="get" style="clear:left">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="page" align="center">
+<tr>
+	
+		<td class="tfoot" valign="top">
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="Quick Style Chooser">
+					<option value="25" class="" selected="selected">-- ZXForums.com (Full - Light)</option>
+<option value="41" class="" >---- ZXForums.com (Full - Dark)</option>
+<option value="33" class="" >-- ZXForums.com (Classic)</option>
+<option value="49" class="" >-- ZXForums.com (Mobile)</option>
+
+				</optgroup>
+			</select>
+		</td>
+	
+	
+	<td class="tfoot subnav-bottom" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				<a href="/forums/sendmessage.php" rel="nofollow" accesskey="9">Contact Us</a> |
+<a href="http://www.zxforums.com/forums/advertise.php" rel="nofollow" accesskey="9">Advertise</a> |
+				<a href="http://www.zxforums.com">ZX Forums</a> | 
+				
+				
+				<a href="http://www.zxforums.com/forums/archive/">Archive</a> | 
+				
+				<a href="http://www.zxforums.com/forums/privacy-policy.php">Privacy Statement</a> | 
+				
+				<a href="http://www.zxforums.com/forums/zx-14-forum/181378-speed-sensor-problem.html#top" onclick="self.scrollTo(0, 0); return false;">Top</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</table>
+
+<br />
+
+
+
+
+<div align="center">
+<a href="http://www.motorcycle.com/"><img class="photo" src="/forums/images/ZXForums_2015/misc/spacer.gif" data-original="/forums/images/ZXForums_2015/misc/footer-logo.png" border="0" height="60" width="250" alt="Motorcycle.com Group" /></a>
+</div>
+
+
+
+
+
+<div align="center">
+
+
+
+	<div class="smallfont" align="center">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+
+
+	</div>
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+</div>
+<!-- end footer -->
+
+</div></div></div><!-- end spacer_open -->
+
+</div>
+<!-- end container -->
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script>
+
+
+
+
+<script src="http://www.zxforums.com/forums/clientscript/scripts-bottom.js"></script>
+
+<script src="http://www.zxforums.com/forums/clientscript/scripts-defer.js"></script>
+
+
+<script src="http://www.google.com/cse/brand?form=&amp;lang=en"></script>
+
+<script>
+//setTimeout(ghostwriter.loadscripts, 250); 
+</script>  
+
+<div id="update-browser">For the best viewing experience please update your browser to <a rel="nofollow" href="http://www.google.com/chrome" target="blank">Google Chrome</a></div>
+
+
+<!-- D_T_O  --><!-- vBadvanced 5-1-9-7-3 -->
+<table cellpadding="3" cellspacing="0" border="0" class="page" align="center" width="100%"><tr><td class="tfoot" align="center" width="100%"><div class="smallfont"><strong><a href="http://www.verticalscope.com/aboutus/tos.php?site=zxforums.com">Terms of Use</a></strong></div></td></tr></table>
+
+
+
+<script type="text/javascript" src="http://zxforums.us.intellitxt.com/intellitxt/front.asp?ipid=11352"></script> 
+<!-- Adblock Check -->
+<div class="afs_ads">&nbsp;</div>
+<script>
+(function() {
+    var adBlockDetector = function() {
+        setTimeout(function() {
+            if (!document.getElementsByClassName) return;
+            
+            var ads = document.getElementsByClassName("afs_ads");
+            ad  = ads[ads.length - 1];
+
+            if (!ad || ad.innerHTML.length == 0 || ad.clientHeight === 0) {
+                _gaq.push(["_trackEvent", "Adblock", "Blocked", "true",,true]);
+            } else {
+                ad.style.display = "none";
+                _gaq.push(["_trackEvent", "Adblock", "Unblocked", "false",,true]);
+            }
+
+        }, 500);
+    }
+
+    /* Attach a listener for page load */
+    if (window.addEventListener) {
+        window.addEventListener("load", adBlockDetector, false);
+    } else {
+        window.attachEvent("onload", adBlockDetector); //IE
+    }
+})();
+</script>
+<!-- /Adblock Check-->
+<!-- Lotame -->
+<script src="http://tags.crwdcntrl.net/c/8060/cc_af.js"></script>
+<!-- /Lotame -->
+
+<!-- SWOOP -->
+<script type="text/javascript">
+  (function addSwoopOnce(domain) {
+    var win = window;
+    try {
+      while (!(win.parent == win || !win.parent.document)) {
+        win = win.parent;
+      }
+    } catch (e) {
+      /* noop */
+    }
+    var doc = win.document;
+    if (!doc.getElementById("swoop_sdk")) {
+      var serverbase = doc.location.protocol + "//ardrone.swoop.com/";
+      var s = doc.createElement("script");
+      s.type = "text/javascript";
+      s.src = serverbase + "js/spxw.js";
+      s.id = "swoop_sdk";
+      s.setAttribute("data-domain", domain);
+      s.setAttribute("data-serverbase", serverbase);
+      doc.head.appendChild(s);
+    }
+  })("SW-86972468-PS1204");
+</script>
+<!-- /SWOOP -->
+<script language="javascript" type="text/javascript"> 
+<!-- 
+var _dropTag=function() { 
+var _qS=""; 
+var _rand=Math.random()+""; 
+var _rs=document.location.protocol+"//"; 
+var xp1_qs = 
+{ 
+"_t": "motovsmotoct", 
+"_random": _rand*100000000000 
+} 
+for(var qsKey in xp1_qs){_qS += "&"+qsKey+"="+xp1_qs[qsKey];} 
+document.write("<iframe src=\""+_rs+"m.xp1.ru4.com/meta?_o=15719"+_qS+"\" width=\"0\" height=\"0\" frameborder=\"0\" scrolling=\"no\"><\/iframe>");} 
+_dropTag(); 
+//--> 
+</script>
+<script type="text/javascript">
+var vs_api = vsapi.api();
+var vs_o = vs_api.vbulletinInit(0, [3802522,3802914,3803658,3805042,3808993]);
+vs_o.addPostElement(document.getElementById("post3802522"), document.getElementById("post_message_3802522"), 3802522, 181378, 14, 119146, 0);vs_o.addPostElement(document.getElementById("post3802914"), document.getElementById("post_message_3802914"), 3802914, 181378, 14, 96465, 1);vs_o.addPostElement(document.getElementById("post3803658"), document.getElementById("post_message_3803658"), 3803658, 181378, 14, 119146, 2);vs_o.addPostElement(document.getElementById("post3805042"), document.getElementById("post_message_3805042"), 3805042, 181378, 14, 118914, 3);vs_o.addPostElement(document.getElementById("post3808993"), document.getElementById("post_message_3808993"), 3808993, 181378, 14, 119146, 4);
+</script>
+<br /><div style="z-index:3" class="smallfont" align="center"></div>      <!-- VigLink vBulletin Plugin v2.0.7.0001: http://viglink.com -->
+      <script type="text/javascript">
+        var vglnk = { api_url: '//api.viglink.com/api',
+                      key: '83d469a881268ce67cda2c313c47bd64' };
+
+        (function(d, t) {
+          var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+                   '//cdn.viglink.com/api') + '/vglnk.js';
+          var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+        }(document, 'script'));
+      </script>
+      <!-- end VigLink -->
+<!-- Taboola Footer -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<!-- /Taboola Footer -->
+
+<script type="text/javascript">
+//<![CDATA[
+
+window.orig_onload = window.onload;
+window.onload = function() {
+var cpost=document.location.hash.substring(1);var cpost2='';if(cpost && (typeof fetch_object != 'undefined')){ var ispost=cpost.substring(0,4)=='post';if(ispost)cpost2='post_'+cpost.substring(4);if((cobj = fetch_object(cpost))||(cobj = fetch_object(cpost2))){cobj.scrollIntoView(true);}else if(ispost){cpostno = cpost.substring(4,cpost.length);if(parseInt(cpostno)>0){location.replace('http://www.zxforums.com/forums/showthread.php?p='+cpostno);};} }
+
+if(typeof window.orig_onload == "function") window.orig_onload();
+}
+
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0f2b0d60a0","applicationID":"2355187","transactionName":"YFMEZUdYCBADVRddVlkZM0NcFgAMEEMORxZBVBVUWhcWCxI=","queueTime":0,"applicationTime":304,"atts":"TBQHEw9CGx4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
