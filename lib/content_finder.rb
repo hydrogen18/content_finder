@@ -1,12 +1,23 @@
 # frozen_string_literal: true
 require 'nokogiri'
 require 'active_support/all'
+require 'null_logger'
+
+require 'content_finder/cli'
 
 module ContentFinder
 
+  module Log
+    mattr_accessor :logger
+    @@logger = NullLogger.new
+    def log
+      ::ContentFinder::Log.logger
+    end
+  end
+
   class LogarithmicThreshold
     def call(depth)
-      0.1 + Math.log(1.0 + depth/20.0) 
+      0.001 + Math.log(1.0 + depth/7.0) 
     end
   end
 
@@ -160,6 +171,7 @@ module ContentFinder
   end
 
   class HeuristicFinder
+    include Log
     IGNORE_TAGS = ::Set.new(['head','script','style']).freeze
 
     attr_reader :recursion_spread_percent
@@ -193,15 +205,21 @@ module ContentFinder
           counts.push(node)
         end
  
-        if counts.length == 1 || counts.spread > recursion_spread_percent 
-          puts "#{input.path} #{counts.length} #{counts.spread}"
+        log.info "#{counts.length} candidates, spread of #{counts.spread}"
+        if counts.length == 1 || counts.spread > recursion_spread_percent           
           largest = counts.to_a.last
+          largest_pct = largest.fetch(1)/counts.total
 
-          if largest.fetch(1) > threshold
+          if largest_pct > threshold
+            log.info "Candidate passes #{largest_pct} > #{threshold}"
             @depth += 1
             selection = largest.fetch(0)
             next
-          end         
+          else
+            log.info "Candidate fails #{largest_pct} > #{threshold}"
+          end 
+        else 
+          log.info "Spread test failed"        
         end  
         break selection
       end
@@ -254,9 +272,10 @@ module ContentFinder
     end
   end
   mattr_accessor :default_factory
-  @@default_factory = HeuristicFinderFactory.new(50.0,
+  @@default_factory = HeuristicFinderFactory.new(75.0,
     ::ContentFinder::LogarithmicThreshold.new)
   def self.heuristic_finder(input)
     default_factory.build(input)
   end
+
 end
